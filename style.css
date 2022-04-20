@@ -1,0 +1,39 @@
+/* general variables*/
+/* top heading */
+.logo-name-pt1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.logo-name-pt2 {
+  color: rgb(0, 191, 0);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 22px;
+  margin-left: 0;
+}
+
+.btn-success {
+  background-color: rgb(0, 191, 0);
+  border-color: rgb(0, 191, 0);
+}
+
+/* top nav bar */
+/* top nav bar */
+#main-name {
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#main-name > span {
+  color: rgb(0, 191, 0);
+}
+
+#under-main-name {
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
