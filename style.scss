@@ -1,34 +1,110 @@
-/* general variables*/
-$nastygreen: rgb(0, 191, 0);
-
-/* top heading */
+//variables
+$weird-green: rgb(9, 173, 9);
+$weird-blue: rgb(2, 58, 81);
+// top heading
 .logo-name-pt1 {
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: 22px;
+   color: white
 }
 .logo-name-pt2 {
-    color: $nastygreen;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 22px;
-    margin-left: 0;
+   color: $weird-green;
 }
-.btn-success {
-    background-color: $nastygreen;
-    border-color: $nastygreen;
+// nav bar
+.nav-section {
+    z-index: 100;
+    background-color: red;
+    width: 100%;
+    height: fit-content;
+    .top-nav-bar {
+        height: 55%;
+        background-color: blue;
+    }
+    .bottom-nav-bar {
+        height: 45%;
+        background-color: green;
+    }
 }
-/* top nav bar */
-/* top nav bar */
-#main-name {
-    color: white;
-    font-size: 28px;
-    font-weight: 800;
+.left-col {
+    margin: auto;
+    display: flex;
+    h4 {
+        color: white;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    h6 {
+        color: rgb(161, 156, 156);
+        font-size: 12px;
+        font-weight: 300;
+    }
+    img {
+        margin: 0.5rem;
+    }
 }
-#main-name > span {
-    color:rgb(0, 191, 0)
+.right-col {
+    margin: auto;
+    text-align: end;
 }
-#under-main-name {
-    font-size: 12px;
+.toggle-col {
+    margin: auto;
+}
+.list-col {
+    margin: auto;
+    ul {
+        color: white;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+// bridge
+.bridge-section {
+    width: 100%;
+    max-height: fit-content;
+    background-color: $weird-blue;
+    h5 {
+        color: $weird-green;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    h6 {
+        color: grey
+    }
+}
+.bridge-container {
+    border-top-style: solid;
+    border-color: white;
+    border-width: 7px;
+}  
+.bridge-card {
+    width: 100%;
+    height: 170px;
+    background-color: white;
+    margin-bottom: 3rem;
+    display: flex;
+}
+.bridge-card-right {
+    width: 50%;
+    img {
+        width: 100%;
+        height: 100%; 
+    }
+}
+.bridge-card-left {
+    width: 50%;
+    height: 100%;
+    p {
+        font-weight: bold;
+        color: $weird-blue;
+        font-size: 18px;
+        margin: 1rem;
+    }
+    svg {
+        color: grey;
+        margin: 1rem;
+    }
+}
+.bridge-card-left:hover {
+    background-color: $weird-green;
+    cursor: pointer;
 }

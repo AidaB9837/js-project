@@ -1,39 +1,140 @@
-/* general variables*/
-/* top heading */
 .logo-name-pt1 {
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  font-size: 22px;
 }
 
 .logo-name-pt2 {
-  color: rgb(0, 191, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 100;
-  font-size: 22px;
-  margin-left: 0;
+  color: #09ad09;
 }
 
-.btn-success {
-  background-color: rgb(0, 191, 0);
-  border-color: rgb(0, 191, 0);
+.nav-section {
+  z-index: 100;
+  background-color: red;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-/* top nav bar */
-/* top nav bar */
-#main-name {
+.nav-section .top-nav-bar {
+  height: 55%;
+  background-color: blue;
+}
+
+.nav-section .bottom-nav-bar {
+  height: 45%;
+  background-color: green;
+}
+
+.left-col {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.left-col h4 {
   color: white;
   font-size: 28px;
-  font-weight: 800;
+  font-weight: bold;
+  margin-bottom: 0;
 }
 
-#main-name > span {
-  color: rgb(0, 191, 0);
-}
-
-#under-main-name {
+.left-col h6 {
+  color: #a19c9c;
   font-size: 12px;
+  font-weight: 300;
 }
 
+.left-col img {
+  margin: 0.5rem;
+}
+
+.right-col {
+  margin: auto;
+  text-align: end;
+}
+
+.toggle-col {
+  margin: auto;
+}
+
+.list-col {
+  margin: auto;
+}
+
+.list-col ul {
+  color: white;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.bridge-section {
+  width: 100%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  background-color: #023a51;
+}
+
+.bridge-section h5 {
+  color: #09ad09;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bridge-section h6 {
+  color: grey;
+}
+
+.bridge-container {
+  border-top-style: solid;
+  border-color: white;
+  border-width: 7px;
+}
+
+.bridge-card {
+  width: 100%;
+  height: 170px;
+  background-color: white;
+  margin-bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bridge-card-right {
+  width: 50%;
+}
+
+.bridge-card-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.bridge-card-left {
+  width: 50%;
+  height: 100%;
+}
+
+.bridge-card-left p {
+  font-weight: bold;
+  color: #023a51;
+  font-size: 18px;
+  margin: 1rem;
+}
+
+.bridge-card-left svg {
+  color: grey;
+  margin: 1rem;
+}
+
+.bridge-card-left:hover {
+  background-color: #09ad09;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
