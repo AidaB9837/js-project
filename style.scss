@@ -1,61 +1,75 @@
 //variables
-$weird-green: rgb(9, 173, 9);
+$weird-green: rgb(79, 191, 79);
 $weird-blue: rgb(2, 58, 81);
-// top heading
-.logo-name-pt1 {
-   color: white
+$ugly-gray: rgb(92, 102, 125);
+@mixin page-content-header{
+    color: $weird-green;
+    font-size: 16px;
+    font-weight: bold;
 }
+@mixin page-content-paragraph {
+    font-size: 56px;
+    color: $weird-blue;
+    font-weight: bold;
+}
+@mixin page-content-title {
+    font-size: 26px;
+    color: $ugly-gray;
+    font-weight: bold;
+}
+// top heading
 .logo-name-pt2 {
    color: $weird-green;
 }
 // nav bar
 .nav-section {
-    z-index: 100;
-    background-color: red;
-    width: 100%;
+    position: relative;
+    top: 56px;
+    z-index: 900;
+    background: rgba(transparent, 0.2);
+    opacity: 0.9;
     height: fit-content;
-    .top-nav-bar {
-        height: 55%;
-        background-color: blue;
-    }
     .bottom-nav-bar {
-        height: 45%;
-        background-color: green;
+        border-top-style: solid;
+        border-top-color: white;
+        border-top-width: 0.5px;
+    }
+    .logo-box{
+        h4 {
+            color:white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        h6 {
+            color: $ugly-gray;
+            font-size: 12px;
+            font-weight: 300;
+        }
     }
 }
-.left-col {
-    margin: auto;
-    display: flex;
-    h4 {
-        color: white;
-        font-size: 28px;
-        font-weight: bold;
-        margin-bottom: 0;
-    }
-    h6 {
-        color: rgb(161, 156, 156);
-        font-size: 12px;
-        font-weight: 300;
-    }
+.nav-link {
+    color: white!important
+}
+// hero section
+.hero-section {
+    width:100%;
+    position: absolute;
+    top: 0;
+    height: 50rem;
+    z-index: 100;
+    .hero-section-content,
+    .carousel-inner,
+    .carousel-item,
     img {
-        margin: 0.5rem;
+        height: 100%;
     }
 }
-.right-col {
-    margin: auto;
-    text-align: end;
-}
-.toggle-col {
-    margin: auto;
-}
-.list-col {
-    margin: auto;
-    ul {
-        color: white;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-    }
+.carousel-background {
+    background-color: $weird-blue;
+    width:100%;
+    position: relative;
+    top: 0;
+    height: 42rem;
 }
 // bridge
 .bridge-section {
@@ -68,20 +82,16 @@ $weird-blue: rgb(2, 58, 81);
         font-weight: bold;
     }
     h6 {
-        color: grey
+        color: $ugly-gray
     }
-}
-.bridge-container {
-    border-top-style: solid;
-    border-color: white;
-    border-width: 7px;
-}  
+} 
 .bridge-card {
     width: 100%;
     height: 170px;
     background-color: white;
     margin-bottom: 3rem;
     display: flex;
+    
 }
 .bridge-card-right {
     width: 50%;
@@ -100,11 +110,112 @@ $weird-blue: rgb(2, 58, 81);
         margin: 1rem;
     }
     svg {
-        color: grey;
+        color: $ugly-gray;
         margin: 1rem;
     }
 }
 .bridge-card-left:hover {
     background-color: $weird-green;
     cursor: pointer;
+    p {
+        color: white
+    }
 }
+// page-content-one: services
+.services {
+    background-color: rgb(201, 229, 238);
+    .services-title {
+        @include page-content-title
+    }
+    .services-paragraph {
+        @include page-content-paragraph
+    }
+    .services-header {
+        @include page-content-header
+    }
+}
+.services-top-card {
+    background-color: rgb(201, 229, 238);
+    border: none;
+    h5 {
+        color: $weird-green;
+        font-size: 48px;
+        span {
+            color: $ugly-gray;
+            font-size: 16px;
+            vertical-align: super;
+        }
+    }
+    p {
+        color: $ugly-gray;
+        font-size: 18px;
+        border-top-color: $ugly-gray;
+        border-top-style: 0.2px;
+        border-top-style: solid;
+    }
+}
+.services-row-two {
+    .card {
+        background-color: rgb(201, 229, 238);
+    }
+    h5 {
+        color: $weird-blue;
+        font-size: 18px;
+    }
+    p {
+        color: $ugly-gray;
+        font-size: 18px;
+    }
+}
+.services-row-three {
+    img {
+        width: 6rem;
+    }
+    .col {
+        width: 16rem;
+    }
+}
+.services-row-four {
+    button  {
+    background-color: $weird-blue;
+    color: white;
+    font-size: 32px;
+    border-radius: 100%;
+    }
+    span {
+        color: $ugly-gray;
+        font-size: 28px;
+    }
+}
+// page-content-two: kwowledge
+.knowledge {
+    .knowledge-paragraph {
+        @include page-content-paragraph
+    }
+    .knowledge-header {
+        @include page-content-header
+    }
+    a {
+        color:$weird-blue;
+        font-size: 18px;
+    }
+    .knowledge-title {
+       @include page-content-title
+    }
+    img {
+        width: 100%;
+        height: 200px;
+    }
+}
+// page-content-three: why
+.why {
+    .why-paragraph {
+        @include page-content-paragraph
+    }
+    h5 {
+        color:$weird-green;
+        font-style: bold;
+        font-size: 28px;
+    }
+}
+//page-content-four: team

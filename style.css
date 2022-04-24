@@ -1,76 +1,61 @@
-.logo-name-pt1 {
-  color: white;
-}
-
 .logo-name-pt2 {
-  color: #09ad09;
+  color: #4fbf4f;
 }
 
 .nav-section {
-  z-index: 100;
-  background-color: red;
-  width: 100%;
+  position: relative;
+  top: 56px;
+  z-index: 900;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 
-.nav-section .top-nav-bar {
-  height: 55%;
-  background-color: blue;
-}
-
 .nav-section .bottom-nav-bar {
-  height: 45%;
-  background-color: green;
+  border-top-style: solid;
+  border-top-color: white;
+  border-top-width: 0.5px;
 }
 
-.left-col {
-  margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.left-col h4 {
+.nav-section .logo-box h4 {
   color: white;
-  font-size: 28px;
+  font-size: 30px;
   font-weight: bold;
-  margin-bottom: 0;
 }
 
-.left-col h6 {
-  color: #a19c9c;
+.nav-section .logo-box h6 {
+  color: #5c667d;
   font-size: 12px;
   font-weight: 300;
 }
 
-.left-col img {
-  margin: 0.5rem;
+.nav-link {
+  color: white !important;
 }
 
-.right-col {
-  margin: auto;
-  text-align: end;
+.hero-section {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  height: 50rem;
+  z-index: 100;
 }
 
-.toggle-col {
-  margin: auto;
+.hero-section .hero-section-content,
+.hero-section .carousel-inner,
+.hero-section .carousel-item,
+.hero-section img {
+  height: 100%;
 }
 
-.list-col {
-  margin: auto;
-}
-
-.list-col ul {
-  color: white;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.carousel-background {
+  background-color: #023a51;
+  width: 100%;
+  position: relative;
+  top: 0;
+  height: 42rem;
 }
 
 .bridge-section {
@@ -82,19 +67,13 @@
 }
 
 .bridge-section h5 {
-  color: #09ad09;
+  color: #4fbf4f;
   font-size: 16px;
   font-weight: bold;
 }
 
 .bridge-section h6 {
-  color: grey;
-}
-
-.bridge-container {
-  border-top-style: solid;
-  border-color: white;
-  border-width: 7px;
+  color: #5c667d;
 }
 
 .bridge-card {
@@ -129,12 +108,136 @@
 }
 
 .bridge-card-left svg {
-  color: grey;
+  color: #5c667d;
   margin: 1rem;
 }
 
 .bridge-card-left:hover {
-  background-color: #09ad09;
+  background-color: #4fbf4f;
   cursor: pointer;
+}
+
+.bridge-card-left:hover p {
+  color: white;
+}
+
+.services {
+  background-color: #c9e5ee;
+}
+
+.services .services-title {
+  font-size: 26px;
+  color: #5c667d;
+  font-weight: bold;
+}
+
+.services .services-paragraph {
+  font-size: 56px;
+  color: #023a51;
+  font-weight: bold;
+}
+
+.services .services-header {
+  color: #4fbf4f;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.services-top-card {
+  background-color: #c9e5ee;
+  border: none;
+}
+
+.services-top-card h5 {
+  color: #4fbf4f;
+  font-size: 48px;
+}
+
+.services-top-card h5 span {
+  color: #5c667d;
+  font-size: 16px;
+  vertical-align: super;
+}
+
+.services-top-card p {
+  color: #5c667d;
+  font-size: 18px;
+  border-top-color: #5c667d;
+  border-top-style: 0.2px;
+  border-top-style: solid;
+}
+
+.services-row-two .card {
+  background-color: #c9e5ee;
+}
+
+.services-row-two h5 {
+  color: #023a51;
+  font-size: 18px;
+}
+
+.services-row-two p {
+  color: #5c667d;
+  font-size: 18px;
+}
+
+.services-row-three img {
+  width: 6rem;
+}
+
+.services-row-three .col {
+  width: 16rem;
+}
+
+.services-row-four button {
+  background-color: #023a51;
+  color: white;
+  font-size: 32px;
+  border-radius: 100%;
+}
+
+.services-row-four span {
+  color: #5c667d;
+  font-size: 28px;
+}
+
+.knowledge .knowledge-paragraph {
+  font-size: 56px;
+  color: #023a51;
+  font-weight: bold;
+}
+
+.knowledge .knowledge-header {
+  color: #4fbf4f;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.knowledge a {
+  color: #023a51;
+  font-size: 18px;
+}
+
+.knowledge .knowledge-title {
+  font-size: 26px;
+  color: #5c667d;
+  font-weight: bold;
+}
+
+.knowledge img {
+  width: 100%;
+  height: 200px;
+}
+
+.why .why-paragraph {
+  font-size: 56px;
+  color: #023a51;
+  font-weight: bold;
+}
+
+.why h5 {
+  color: #4fbf4f;
+  font-style: bold;
+  font-size: 28px;
 }
 /*# sourceMappingURL=style.css.map */
