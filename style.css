@@ -58,6 +58,12 @@
   height: 42rem;
 }
 
+.card-row {
+  z-index: 200;
+  position: relative;
+  top: 20rem;
+}
+
 .bridge-section {
   width: 100%;
   max-height: -webkit-fit-content;

@@ -71,6 +71,11 @@ $ugly-gray: rgb(92, 102, 125);
     top: 0;
     height: 42rem;
 }
+.card-row {
+    z-index: 200;
+    position: relative;
+    top: 20rem;
+}
 // bridge
 .bridge-section {
     width: 100%;
