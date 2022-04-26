@@ -224,3 +224,77 @@ $ugly-gray: rgb(92, 102, 125);
     }
 }
 //page-content-four: team
+.team-image {
+    max-height: 700px;
+    width: 100%;
+}
+.team {
+    .team-paragraph {
+        @include page-content-paragraph
+    }
+    .team-header {
+        @include page-content-header
+    }
+    li {
+        color:$ugly-gray
+    }
+    h5 {
+        color: $weird-blue;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    h6 {
+        color: $ugly-gray
+    }
+}
+.team-row-one {
+    border-bottom-style: solid;
+    border-bottom-width: 10px;
+    border-bottom-color: $weird-blue;
+}
+// page-content-five: news
+.news {
+    h5 {
+        color: $weird-blue;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    h6 {
+        color: $ugly-gray
+    }
+}
+//footer
+footer {
+    background-color: $weird-blue;
+    h3 {
+        color: white;
+        font-size: 60px;
+        width: 10rem;
+    }
+    h5 {
+        color: $ugly-gray;
+        font-size: 18px;
+    }
+    button {
+        width: 12rem;
+        height: 3rem;
+    }
+    h6 {
+        color: $ugly-gray;
+        font-size: 14px;
+    }
+    button {
+        width: 12rem !important
+    }
+    .list-group-item {
+        background-color: $weird-blue;
+        color: $ugly-gray;
+        border-style: none
+    }
+    .form-control {
+        background-color: $weird-blue;
+    }
+    .input-button {
+        width: 5rem !important
+    }
+}
