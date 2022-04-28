@@ -17,23 +17,14 @@ $ugly-gray: rgb(92, 102, 125);
     color: $ugly-gray;
     font-weight: bold;
 }
-// top heading
-.logo-name-pt2 {
-   color: $weird-green;
-}
 // nav bar
 .nav-section {
-    position: relative;
-    top: 56px;
+    position: absolute;
+    top: 0;
     z-index: 900;
     background: rgba(transparent, 0.2);
     opacity: 0.9;
     height: fit-content;
-    .bottom-nav-bar {
-        border-top-style: solid;
-        border-top-color: white;
-        border-top-width: 0.5px;
-    }
     .logo-box{
         h4 {
             color:white;
@@ -50,13 +41,16 @@ $ugly-gray: rgb(92, 102, 125);
 .nav-link {
     color: white!important
 }
+//modal
+.modal-dialog {
+  background-color: white;
+  opacity: 1;
+}
 // hero section
 .hero-section {
+    position: relative;
     width:100%;
-    position: absolute;
-    top: 0;
     height: 50rem;
-    z-index: 100;
     .hero-section-content,
     .carousel-inner,
     .carousel-item,
@@ -64,18 +58,25 @@ $ugly-gray: rgb(92, 102, 125);
         height: 100%;
     }
 }
-.carousel-background {
-    background-color: $weird-blue;
-    width:100%;
-    position: relative;
-    top: 0;
-    height: 42rem;
-}
-.card-row {
-    z-index: 200;
-    position: relative;
-    top: 20rem;
-}
+.carousel-card {
+    position: absolute;
+    z-index: 100;
+    top: 40%;
+    left:15%;
+    right: 15%;
+    .card {
+        background-color: transparent;
+    }
+    h5 {
+        color: white;
+        font-size: 70px;
+        font-weight: bold;
+    }
+    span {
+        color: white;
+        font-size: 20px;
+    }
+}  
 // bridge
 .bridge-section {
     width: 100%;
@@ -185,7 +186,9 @@ $ugly-gray: rgb(92, 102, 125);
     background-color: $weird-blue;
     color: white;
     font-size: 32px;
-    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
     }
     span {
         color: $ugly-gray;
@@ -254,6 +257,9 @@ $ugly-gray: rgb(92, 102, 125);
 }
 // page-content-five: news
 .news {
+    .quote {
+        width: 60px;
+    }
     h5 {
         color: $weird-blue;
         font-size: 16px;
@@ -261,6 +267,33 @@ $ugly-gray: rgb(92, 102, 125);
     }
     h6 {
         color: $ugly-gray
+    }
+    h3 {
+        color: $weird-blue;
+        font-size: 36px;
+    }
+    .photos {
+        height: 257px;
+        overflow: hidden;
+    }
+    .row-three-news {
+        img {
+            width:90%;
+            margin: auto;
+            height:100%;
+            object-fit:cover;
+        }
+        .card {
+            margin: auto;
+        }
+    }  
+}
+.news-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    img {
+        width:12rem
     }
 }
 //footer
@@ -275,26 +308,48 @@ footer {
         color: $ugly-gray;
         font-size: 18px;
     }
-    button {
-        width: 12rem;
-        height: 3rem;
-    }
-    h6 {
+    h6, p {
         color: $ugly-gray;
         font-size: 14px;
     }
     button {
-        width: 12rem !important
+        width: 12rem !important;
+        height: 3rem
     }
     .list-group-item {
         background-color: $weird-blue;
         color: $ugly-gray;
-        border-style: none
+        border-style: none;
+    }
+    .first {
+        color:white;
     }
     .form-control {
         background-color: $weird-blue;
     }
     .input-button {
         width: 5rem !important
+    }
+}
+//medium screen
+@media only screen and (max-width: 768px){
+    .hero-section {
+        height: 40rem;
+    }
+    .carousel-card {
+        top: 30%;
+        left:0%;
+        h5 {
+            font-size: 50px;
+        }
+        span {
+            font-size: 15px;
+        }
+    } 
+}
+//small screen
+@media only screen and (max-width: 576px){
+    .hero-section {
+        height: 30rem;
     }
 }
