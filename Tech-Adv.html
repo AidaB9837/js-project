@@ -25,13 +25,18 @@
                 Now</button>
         </div>
     </nav>
+
+
     <main class="real-body">
         <section class="first-container">
-            <nav class="navbar navbar-dark navbar-top p-0 ">
-                <div class="container-fluid h-100 d-flex justify-content-between">
+
+            <!--Navbar-->
+            <nav class="navbar navbar-dark navbar-top p-0 w-100 d-flex justify-content-between">
+                <div class="container-fluid h-100 ">
+                    <!--logo-->
                     <a class="navbar-brand" href="#">
                         <img src="https://fin.21lab.co/wp-content/themes/finlab/assets/img/logo.png" alt=""
-                            class="d-inline-block align-text-top">
+                            class="d-inline-block align-text-top" id="logo">
                     </a>
 
                     <ul class="nav d-xl-flex d-none justify-content-end h-100 ">
@@ -101,9 +106,9 @@
                             </ul>
                         </li>
 
-                        <li class="nav-item h-100" id="wwd">
-                            <div class="hover-bar w-75"></div>
-                            <a class="nav-link d-flex align-items-center h-100 p-0" href="#">
+                        <li class="nav-item h-100">
+                            <div class="hover-bar w-75 bg-white"></div>
+                            <a class="nav-link d-flex align-items-center h-100 p-0 text-white" href="#">
                                 What We Do <span class="arrow-down ms-3"></span>
                             </a>
                             <ul class="dropdown flex-column justify-content-around">
@@ -152,7 +157,7 @@
                                 <li>
                                     <a href="#" class="d-flex align-items-center" style="transform: none">
                                         <span class="green-circle me-5"
-                                            style="border: 6px solid #35BF6A; transform: translateX(-2px)"></span>
+                                            style="border: 6px solid var(--green); transform: translateX(-4px)"></span>
                                         Technology Advisory
                                     </a>
                                 </li>
@@ -201,7 +206,7 @@
                                 Blog & Insights
                             </a>
                         </li>
-
+                        
                         <!--offcanvas button-->
                         <li class="m-auto">
                             <a class="btn" id="offcanvas-button1" data-bs-toggle="offcanvas" href="#offcanvas1"
@@ -223,108 +228,125 @@
                         </li>
                     </ul>
 
-                    <!--sidebar mobile button-->
-                    <a class="btn d-xl-none d-inline" id="offcanvas-button1" data-bs-toggle="offcanvas" role="button"
-                        aria-controls="offcanvasRight" data-bs-target="#offcanvasRight"></a>
 
-                    <!--sidebar mobile-->
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                        aria-labelledby="offcanvasRightLabel">
-                        <div class="offcanvas-header">
-                            <div></div>
-                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                aria-label="Close"></button>
+                    <!--buttons mobile-->
+                    <div class="d-xl-none d-flex">
+                        <!--talk to an expert Mobile-->
+                        <div class="m-auto me-3">
+                            <button id="modal-button2" type="button" class="btn btn-primary align-items-center d-none d-sm-flex d-xl-none"
+                                data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <span class="ms-3 fw-bold">Talk to an Expert</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-chat-fill ms-2 me-3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z" />
+                                </svg>
+                            </button>
                         </div>
-                        <div class="offcanvas-body" style="overflow:scroll;">
 
-                            <ul class="list-unstyled ps-0">
-                                <li>
-                                    <div class="d-flex justify-content-between align-items-center border-bottom py-3">
-                                        Homepage
-                                        <a class="d-flex align-items-center" data-bs-toggle="collapse"
-                                            data-bs-target="#home-collapse" aria-expanded="true">
-                                            <i class="arrow-down-black"></i>
-                                        </a>
-                                    </div>
-                                    <div class="collapse" id="home-collapse">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-4">
-                                            <li><a href="#" class="link-dark rounded">Home 1</a></li>
-                                            <li><a href="#" class="link-dark rounded">Home 2</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                        <!--sidebar mobile button-->
+                        <a class="btn d-xl-none d-inline" id="offcanvas-button1" data-bs-toggle="offcanvas" role="button"
+                            aria-controls="offcanvasRight" data-bs-target="#offcanvasRight"></a>
 
-                                <li>
-                                    <div class="d-flex justify-content-between border-bottom align-items-center py-3">
-                                        Who we Are
-                                        <a class="d-flex align-items-center" data-bs-toggle="collapse"
-                                            data-bs-target="#whoweare-collapse" aria-expanded="true">
-                                            <i class="arrow-down-black"></i>
-                                        </a>
-                                    </div>
-                                    <div class="collapse" id="whoweare-collapse">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-4">
-                                            <li><a href="#" class="link-dark rounded">About Us</a></li>
-                                            <li><a href="#" class="link-dark rounded">Our Leadership Team</a></li>
-                                            <li><a href="#" class="link-dark rounded">Why Choose Us</a></li>
-                                            <li><a href="#" class="link-dark rounded">Our History</a></li>
-                                            <li><a href="#" class="link-dark rounded">Careers</a></li>
+                        <!--sidebar mobile-->
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <div></div>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body" style="overflow:scroll;">
 
-                                        </ul>
-                                    </div>
-                                </li>
+                                <ul class="list-unstyled ps-0">
+                                    <li>
+                                        <div class="d-flex justify-content-between align-items-center border-bottom py-3">
+                                            Homepage
+                                            <a class="d-flex align-items-center" data-bs-toggle="collapse"
+                                                data-bs-target="#home-collapse" aria-expanded="true">
+                                                <i class="arrow-down-black"></i>
+                                            </a>
+                                        </div>
+                                        <div class="collapse" id="home-collapse">
+                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-4">
+                                                <li><a href="#" class="link-dark rounded">Home 1</a></li>
+                                                <li><a href="#" class="link-dark rounded">Home 2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
 
-                                <li>
-                                    <div class="d-flex justify-content-between border-bottom align-items-center py-3">
-                                        What We Do
-                                        <a class=" d-flex align-items-center" data-bs-toggle="collapse"
-                                            data-bs-target="#whatwedo-collapse" aria-expanded="true">
-                                            <i class="arrow-down-black"></i>
-                                        </a>
-                                    </div>
-                                    <div class="collapse" id="whatwedo-collapse">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-4">
-                                            <li><a href="#" class="link-dark rounded"></a></li>
-                                            <li><a href="#" class="link-dark rounded">Accounting Services</a></li>
-                                            <li><a href="#" class="link-dark rounded">Audit & Tax Services</a></li>
-                                            <li><a href="#" class="link-dark rounded">Capital Investments</a></li>
-                                            <li><a href="#" class="link-dark rounded">Finance & Restructuring</a></li>
-                                            <li><a href="#" class="link-dark rounded">Financial Consultant</a></li>
-                                            <li><a href="#" class="link-dark rounded">Portfolio Management</a></li>
-                                            <li><a href="#" class="link-dark rounded">Technology Advisory</a></li>
-                                            <li><a href="#" class="link-dark rounded">All Services Page</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                    <li>
+                                        <div class="d-flex justify-content-between border-bottom align-items-center py-3">
+                                            Who we Are
+                                            <a class="d-flex align-items-center" data-bs-toggle="collapse"
+                                                data-bs-target="#whoweare-collapse" aria-expanded="true">
+                                                <i class="arrow-down-black"></i>
+                                            </a>
+                                        </div>
+                                        <div class="collapse" id="whoweare-collapse">
+                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-4">
+                                                <li><a href="#" class="link-dark rounded">About Us</a></li>
+                                                <li><a href="#" class="link-dark rounded">Our Leadership Team</a></li>
+                                                <li><a href="#" class="link-dark rounded">Why Choose Us</a></li>
+                                                <li><a href="#" class="link-dark rounded">Our History</a></li>
+                                                <li><a href="#" class="link-dark rounded">Careers</a></li>
 
-                                <li>
-                                    <div class="d-flex justify-content-between border-bottom align-items-center py-3">
-                                        Case Studies
-                                        <a class="d-flex align-items-center" data-bs-toggle="collapse"
-                                            data-bs-target="#casestudies-collapse" aria-expanded="true">
-                                            <i class="arrow-down-black"></i>
-                                        </a>
-                                    </div>
-                                    <div class="collapse" id="casestudies-collapse">
-                                        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-4">
-                                            <li><a href="#" class="link-dark rounded">Grid 1</a></li>
-                                            <li><a href="#" class="link-dark rounded">Grid 2</a></li>
-                                            <li><a href="#" class="link-dark rounded">Grid 3</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
 
-                                <li><a href="#">
-                                        <div class="link-dark py-3 border-bottom">Blog & Insights</div>
-                                    </a></li>
-                                <li><a href="#">
-                                        <div class="link-dark py-3 border-bottom">Shop</div>
-                                    </a></li>
-                                <li><a href="#">
-                                        <div class="link-dark py-3 border-bottom">Contact Us</div>
-                                    </a></li>
+                                    <li>
+                                        <div class="d-flex justify-content-between border-bottom align-items-center py-3">
+                                            What We Do
+                                            <a class=" d-flex align-items-center" data-bs-toggle="collapse"
+                                                data-bs-target="#whatwedo-collapse" aria-expanded="true">
+                                                <i class="arrow-down-black"></i>
+                                            </a>
+                                        </div>
+                                        <div class="collapse" id="whatwedo-collapse">
+                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-4">
+                                                <li><a href="#" class="link-dark rounded"></a></li>
+                                                <li><a href="#" class="link-dark rounded">Accounting Services</a></li>
+                                                <li><a href="#" class="link-dark rounded">Audit & Tax Services</a></li>
+                                                <li><a href="#" class="link-dark rounded">Capital Investments</a></li>
+                                                <li><a href="#" class="link-dark rounded">Finance & Restructuring</a></li>
+                                                <li><a href="#" class="link-dark rounded">Financial Consultant</a></li>
+                                                <li><a href="#" class="link-dark rounded">Portfolio Management</a></li>
+                                                <li><a href="#" class="link-dark rounded">Technology Advisory</a></li>
+                                                <li><a href="#" class="link-dark rounded">All Services Page</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
 
-                            </ul>
+                                    <li>
+                                        <div class="d-flex justify-content-between border-bottom align-items-center py-3">
+                                            Case Studies
+                                            <a class="d-flex align-items-center" data-bs-toggle="collapse"
+                                                data-bs-target="#casestudies-collapse" aria-expanded="true">
+                                                <i class="arrow-down-black"></i>
+                                            </a>
+                                        </div>
+                                        <div class="collapse" id="casestudies-collapse">
+                                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small ms-4">
+                                                <li><a href="#" class="link-dark rounded">Grid 1</a></li>
+                                                <li><a href="#" class="link-dark rounded">Grid 2</a></li>
+                                                <li><a href="#" class="link-dark rounded">Grid 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+
+                                    <li><a href="#">
+                                            <div class="link-dark py-3 border-bottom">Blog & Insights</div>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <div class="link-dark py-3 border-bottom">Shop</div>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <div class="link-dark py-3 border-bottom">Contact Us</div>
+                                        </a></li>
+
+                                </ul>
+                            </div>
                         </div>
                     </div>
 
@@ -421,7 +443,7 @@
                             </section>
                             <section class="mx-5 py-3">
                                 <input type="submit" value="Send Message" class="py-2 px-5 fw-bold"
-                                    style="background-color: #35BF6A; border: none; color: white;">
+                                    style="background-color: var(--green); border: none; color: white;">
 
                             </section>
                         </form>
@@ -429,6 +451,63 @@
                 </div>
             </div>
 
+            <div class="container text-center text-xl-start my-lg-4 m-0 " id="grid" >
+                <div class="row py-3">
+                    <div class="col-xl-6 col-12 pb-xl-0 pb-2" style="font-size: 14px; color: var(--green);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-circle me-5-fill" viewBox="0 0 16 16" style="margin-right: 1%;">
+                            <circle me-5 cx="6" cy="6" r="6" />
+                        </svg>
+                        TECHNOLOGY ADVISORY
+                    </div>
+                    <div class="col-xl-6 col-12 d-none d-xl-block" style="opacity: .1; margin: auto; color: #fff; overflow: hidden;">_____________________________________________________________________________________________________</div>
+                </div>
+                <div class="row py-3">
+                    <div class="col-xl-6 col-12 pb-xl-0 pb-3 big-text">
+                        Technology Advisory Services
+                    </div>
+                    <div class="col-xl-6 col-12 pt-xl-0 py-3 small-text m-auto border-m">
+                        Technology Advisory is a client-driven approach with a suite of IT support services,
+                        including professional advice backed by world-class expertise and in line with the
+                        changing technology trends. Our Advisers are available to help you make strategic
+                        decisions whenever you come to a crossroads.
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-creditcard d-flex justify-content-end mx-2 mx-md-0">
+                <div class="d-flex justify-content-center align-items-center" style="width: 50%;">
+
+                    <div class="widget d-none d-md-block py-4 px-5">
+                        <span class="fw-light">Quicklink For More Information</span>
+                        <hr style="opacity: .1;">
+                        <div class="">
+                            <div class="row py-2">
+                                <div class="col"><a href="#" class="fw-light">Accounting</a></div>
+                                <div class="col"><a href="#" class="fw-light">Tax & Audit</a></div>
+                            </div>
+                            <div class="row py-2">
+                                <div class="col"><a href="#" class="fw-light">Investments</a></div>
+                                <div class="col"><a href="#" class="fw-light">Finance</a></div>
+                            </div> 
+                            <div class="row py-2">
+                                <div class="col"><a href="#" class="fw-light">Consultant</a></div>
+                                <div class="col"><a href="#" class="fw-light">Management</a></div>
+                            </div> 
+                            <div class="row py-2">
+                                <div class="col"><a href="#" style="color: var(--green);">Technology</a></div>
+                                <div class="col"><a href="#" class="fw-light">All Services</a></div>
+                            </div>
+                            <div class="row py-2">
+                                <button class="w-100 border-0 text-white" style="background-color: var(--green);height: 40px;">How Can We Help?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div style="height: 1000px; "></div>
     </main>
 
     <script type="text/javascript" src="index.js"></script>

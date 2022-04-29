@@ -1,5 +1,15 @@
+:root{
+--blue: #023A51;
+--green:#35BF6A;
+}
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+@media screen and (max-width: 320px){
+    html{
+        width: 320px;
+        overflow: auto;
+    }
 }
 li{
     list-style-type: none;
@@ -19,15 +29,11 @@ a{
 .real-body{
     height: calc(100vh - 60px);
     overflow-y: auto;
-    background: #fff;
+    background: white;
 }
-@media only screen and (min-width: 576px){
-    .real-body>*{
-        padding: 0 10%;
-    }
-}
+
 .first-container{
-    background-color: #023A51;
+    background-color:var(--blue);
     height: 750px;
 }
 .navbar{
@@ -52,34 +58,28 @@ a{
     border-top: 5px solid rgba(0,0,0, 0.5);
 } 
 .first-container a:hover{
-    color: #fff;
+    color: white;
 }
-a:hover .arrow-down, .dropdown:hover~ .arrow-down{
+a:hover .arrow-down{
     border-top: 5px solid white;
     transition: 0.3s;
     transform: rotate(-180deg);
 }
 .first-container nav a:not(:hover) .arrow-down{
-transition: 0.3s;
+    transition: 0.1s;
 }
 .nav-item{
     width: 120px;
 }
 .nav-item:hover .hover-bar{
-    background-color: #fff;
+    background-color: white;
     transition: background-color 0.3s linear;
 }
 .hover-bar{
     height: 3px;
 }
-#wwd ul.nav a{
-    color: white;
-}
-#wwd .hover-bar{
-    background-color: #fff;
-}
 .dropdown{
-    background-color: #fff;
+    background-color: white;
     display: none;
     padding-left: 0;
     width: 25vw;
@@ -93,16 +93,16 @@ transition: 0.3s;
     height: 50px;
 }
 .first-container .dropdown a{
-    color: #023A51;
+    color: var(--blue);
     opacity: 0.9;
 }
 .green-circle{
-    border: 3px solid #35BF6A;
-    background-color:#35BF6A;
+    border: 3px solid var(--green);
+    background-color:var(--green);
     border-radius: 50%;
 }
 .first-container .dropdown a:hover .green-circle{
-    border: 6px solid #35BF6A;
+    border: 6px solid var(--green);
     transform: translateX(2px);
     transition: 0.3s ;
 }
@@ -111,20 +111,15 @@ transition: 0.3s;
     transform: translateX(-6px);
     transition: 0.3s ;
 }
-.hr{
-    height: 0;
-    width: 100%;
-    border-top: 1px solid lightgray ;
-}
 .first-container .offcanvas-body p>a{
-color:#35BF6A;
-text-decoration: none;
+    color:var(--green);
+    text-decoration: none;
 }
 div.offcanvas >* {
     margin: 0 7%;
 }
 #offcanvas1 .btn{
-    background-color: #35BF6A;
+    background-color: var(--green);
     height: 50px;
 }
 .offcanvas-body{
@@ -137,18 +132,102 @@ div.offcanvas >* {
     background-image: url(56763.png) ;
     background-size: 15px;
     background-position: center;
-    background-color: #fff;
+    background-color: white;
     background-repeat: no-repeat;
 }
-#modal-button{
+#modal-button,#modal-button2{
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    color: #fff;
-    background-color: #35BF6A;
+    color: white;
+    background-color: var(--green);
     border: unset;
 }
+#modal-button2{
+    width: fit-content;
+    border-radius: 1000px;
+}
+
 #offcanvas-button1:focus,#modal-button:focus{
     outline:none;
     box-shadow: none;
+}
+.modal-header button{
+    background-color: var(--green);
+    opacity: 1;
+}
+.big-text{
+    font-size: 54px;
+    color: white;
+}
+.small-text{
+    font-size: 16px;
+    color: white;
+    opacity: .5;
+}
+.img-creditcard{
+    background-image: url(https://fin.21lab.co/wp-content/uploads/2021/10/3.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+.widget{
+    height: 70%;
+    width: 65%; 
+    border-top: 5px solid  var(--green);
+    background-color: white;
+    color: var(--blue);
+}
+.widget a{
+    opacity: 0.95;
+    color: rgba(0,0,0,.5);
+}
+.widget a:hover{
+    color: var(--blue);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    transition: color 0.3s;
+    transition: border 0.3 ease;
+}
+.widget button{
+    background: linear-gradient(to left, var(--green) 50%, var(--blue) 50%) right;
+    background-size: 200%;
+    transition: .1s ease-out;
+}
+.widget button:hover{
+    background-position: left;
+}
+
+@media only screen and (max-width: 769px){
+    .big-text{
+        font-size: 30px;
+        border-bottom: 1px solid rgba(256,256,256, .1);
+    }
+    #logo{
+        width: 30vw;
+    }
+}
+@media only screen and (max-width:576px){
+    .img-creditcard{
+        background-position: -80px center;
+    }
+    #logo{
+        width: 50vw;
+    }
+}
+@media only screen and (min-width: 768px){
+    .real-body>*{
+        padding: 0 10%;
+    }
+    .big-text{
+        border-bottom: 1 px solid rgba(256,256,256, 0.1);
+    }
+}
+@media only screen and (min-width:1441px) {
+    .img-creditcard{
+        height: 100%;
+        width: 60%;
+        margin: 0 20% !important;
+    }
 }
