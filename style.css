@@ -1,0 +1,75 @@
+
+/* ---------------------------- FOOTER ---------------------------- */
+
+footer, footer .list-group-item {
+    background-color: #023a51;
+    border:none;
+  }
+  .footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap:5rem;
+      font-size:0.8rem;
+      
+  }
+li{
+    font-weight: 500;
+}
+
+footer a, footer, footer li:first-child{
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+h2 a {
+    font-size:3rem;
+}
+.btn-lg.btn-success.px-5.py-3{
+    font-size:0.8rem;
+    font-weight:600;
+    border-radius: 0;
+    background-color:#2cbc63;
+}
+.bg-image{
+    background-image: url('/assets/images/map-ft.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer input, .button-svg{
+    background-color: transparent;
+    border: none;
+    
+}
+
+footer input{
+    color:#97afb8;
+}
+.button-svg{
+    color: rgba(255, 255, 255, 0.5);
+}
+hr{
+    border:2px solid #97afb8;
+}
+.copyright hr{
+    margin:0 15rem 2rem 15rem;
+    border: 1px;
+}
+.card-text, footer .list-group-item{
+    color:#97afb8
+}
+.copyright{
+text-align:center;
+font-size:0.7rem;
+color:#97afb8;
+margin-top: 3rem;
+padding-bottom: 3rem;;
+}
+
+.col-5.mt-5 p{
+    margin:0;
+    padding:0;
+    color:#97afb8;
+}
