@@ -25,6 +25,21 @@
   color: white !important;
 }
 
+.hamburger-menu {
+  background-color: white;
+  display: none;
+  position: fixed;
+  z-index: 1000;
+}
+
+.hamburger-menu header {
+  text-align: end;
+}
+
+.hamburger-menu .btn-close {
+  background-color: #4fbf4f;
+}
+
 .modal-dialog {
   background-color: white;
   opacity: 1;
@@ -378,6 +393,40 @@ footer .form-control {
 
 footer .input-button {
   width: 5rem !important;
+}
+
+.cookie-policy {
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+}
+
+.cookie-policy .card {
+  background-color: black;
+}
+
+.cookie-policy .card h5 {
+  color: white;
+}
+
+.cookie-policy .card p {
+  color: #5c667d;
+}
+
+.cookie-policy .card .btn-cookie {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: white;
+  color: black;
+}
+
+.cookie-policy .card .btn-close {
+  background-color: #5c667d;
+}
+
+.cookie-policy .card h6 {
+  color: white;
+  margin-top: 1rem;
 }
 
 @media only screen and (max-width: 768px) {

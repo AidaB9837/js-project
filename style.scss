@@ -41,6 +41,19 @@ $ugly-gray: rgb(92, 102, 125);
 .nav-link {
     color: white!important
 }
+//hamburger menu
+.hamburger-menu {
+    background-color: white;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    header {
+      text-align: end;
+    }
+    .btn-close {
+        background-color: $weird-green;
+    }
+}
 //modal
 .modal-dialog {
   background-color: white;
@@ -329,6 +342,34 @@ footer {
     }
     .input-button {
         width: 5rem !important
+    }
+}
+// cookie policy section
+.cookie-policy {
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    .card {
+        background-color: black;
+        h5 {
+            color:white
+        }
+        p {
+            color: $ugly-gray
+        }
+        .btn-cookie {
+            width: 100%;
+            margin-top: 1rem;
+            background-color: white;
+            color: black
+        }
+        .btn-close {
+            background-color: $ugly-gray;
+        }
+        h6 {
+            color: white;
+            margin-top: 1rem;
+        }
     }
 }
 //medium screen
