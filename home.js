@@ -86,6 +86,8 @@ const acceptCookie = document.getElementById('accept-cookie')
 acceptCookie.addEventListener('click', (e) => {
     e.preventDefault();
     console.log('All cookies accepted')
+
+    cookieSection.style.display = 'none'
 })
 
 const selectCookie = document.getElementById('select-cookie')
@@ -97,5 +99,15 @@ selectCookie.addEventListener('click', (e) => {
     const performanceCookie = document.getElementById('cookie-prestazione')
     const advertiseCookie = document.getElementById('cookie-pubblicità')
 
-    console.log(analiticCookie.checked + performanceCookie.checked + advertiseCookie.checked)
+    if (analiticCookie.checked) {
+        console.log('Analitic Cookies accepted')
+    }
+    if (performanceCookie.checked) {
+        console.log('Performance Cookies accepted')
+    }
+    if (advertiseCookie.checked) {
+        console.log('Advertisement Cookies accepted')
+    }
+
+    cookieSection.style.display = 'none'
 })
