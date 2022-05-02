@@ -14,6 +14,9 @@ body{
 li{
     list-style-type: none;
 }
+.h-750{
+    height: 750px;
+}
 a{
     text-decoration: none;
 }
@@ -27,14 +30,13 @@ a{
     border: none;
 }
 .real-body{
-    height: calc(100vh - 60px);
+    height: calc(100vh - 50px);
     overflow-y: auto;
     background: white;
 }
 
 .first-container{
     background-color:var(--blue);
-    height: 750px;
 }
 .navbar{
     height: 90px;
@@ -129,7 +131,7 @@ div.offcanvas >* {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-image: url(56763.png) ;
+    background-image: url(./asset/56763.png) ;
     background-size: 15px;
     background-position: center;
     background-color: white;
@@ -199,23 +201,41 @@ div.offcanvas >* {
     background-position: left;
 }
 
+.second-container>div:first-child{
+    color: var(--blue); 
+    font-size: 54px;
+    margin: 0 15%;
+}
+
+@media only screen and (max-width:576px){
+    #grid .row *{
+        margin: 5% 0;
+        
+    }
+    .img-creditcard{
+        height: 20%;
+    }
+    #logo{
+        width: 50vw;
+    }
+    .second-container>div{
+        font-size: 30px;
+        margin: 0 5%!important;
+    }
+}
 @media only screen and (max-width: 769px){
     .big-text{
-        font-size: 30px;
+        font-size: 30px !important;
         border-bottom: 1px solid rgba(256,256,256, .1);
     }
     #logo{
         width: 30vw;
     }
-}
-@media only screen and (max-width:576px){
-    .img-creditcard{
-        background-position: -80px center;
-    }
-    #logo{
-        width: 50vw;
+    #md-fs-resize{
+        font-size: 30px;
     }
 }
+
 @media only screen and (min-width: 768px){
     .real-body>*{
         padding: 0 10%;
@@ -226,8 +246,6 @@ div.offcanvas >* {
 }
 @media only screen and (min-width:1441px) {
     .img-creditcard{
-        height: 100%;
-        width: 60%;
-        margin: 0 20% !important;
+        width: 100%;
     }
 }
