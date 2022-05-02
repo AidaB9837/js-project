@@ -1,31 +1,47 @@
 //console log data from the form inside modal
-const form = document.querySelector('form')
-
-form.addEventListener('submit', function(e) {
+const modalBtn = document.getElementById('modalBtn')
+modalBtn.addEventListener('click', function(e) {
     e.preventDefault();
-    
 
-    const selectOne = document.getElementById('selectOne').selectedIndex
-    console.log(selectOne)
-    const selectTwo = document.getElementById('selectTwo').selectedIndex
-    console.log(selectTwo)
-    const selectThree = document.getElementById('selectThree').selectedIndex
-    console.log(selectThree)
+    const selectOne = document.getElementById('selectOne').value
+    if (selectOne == 0) {
+        console.log('Freelencer/Own Business')
+    } else {
+        console.log('Other Options')
+    }
+    const selectTwo = document.getElementById('selectTwo').value
+    switch(selectTwo) {
+        case '0': console.log('Call')
+        break;
+        case '1': console.log('Email')
+        break;
+        case '2': console.log('Letter')
+        break
+    }
+    const selectThree = document.getElementById('selectThree').value
+    switch(selectThree) {
+        case '0': console.log('Financial Consultant')
+        break;
+        case '1': console.log('Accounting Services')
+        break;
+        case '2': console.log('Tax Services')
+        break;
+        case '3': console.log('Careers')
+        break;
+        case '4': console.log('Request Additional Information')
+        break;
+    }
 
     const fullName = document.getElementById('fullNameInput').value
-    console.log(fullName)
     const email = document.getElementById('emailInput').value
-    console.log(email)
     const phoneNum = document.getElementById('phoneInput').value
-    console.log(phoneNum)
     const message = document.getElementById('messageInput').value
-    console.log(message)
 
     const checkbox = document.getElementById('checkbox').checked
-    console.log(checkbox)
+    console.log('Name: ' + fullName + '\nEmail: ' + email + '\nPhone Number: ' + phoneNum + '\nMessage: ' + message + '\nAgree to receive communications: ' + checkbox)
 })
 
-//hamburger menu
+//opening hamburger menu
 const hamburgerButton = document.getElementById('hamburger-button')
 const hamburgerMenu = document.getElementById('hamburger-menu')
 
@@ -48,7 +64,11 @@ burgerBtn.addEventListener('click', (e) => {
 
     const name = document.getElementById('name')
     const phone = document.getElementById('number')
-    console.log('Form has been submitted! Customer name:' + name.value + '; Phone number: ' + phone.value)
+    
+    if (phone.value.length !== 10) {
+        alert('This phone number is not valid\nPlease enter a 10 digits phone number')
+    } else {console.log('Form submitted! Customer name:' + name.value + '; Phone number: ' + phone.value)}
+
 })
 
 //cookie section
