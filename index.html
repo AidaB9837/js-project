@@ -9,6 +9,179 @@
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
+      <!-- NAVBAR -->
+      <header>
+        <!------- FIRST NAV ------->
+      <nav class="navbar navbar-light bg-transparent">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="/assets/images/logo.png" alt="logo-finlab">
+            </a>
+            <nav class="nav">
+              <ul class="social-nav d-flex">
+              <li><a class="nav-link justify-content-start" href="#">
+                <img src="/assets/images/icons8-facebook-nuovo-30.png" alt="facebook">
+              </a></li>
+              <li><a class="nav-link" href="#">
+                <img src="/assets/images/icons8-twitter-30.png" alt="twitter">
+              </a></li>
+              <li><a class="nav-link" href="#">
+                <img src="/assets/images/icons8-facebook-messenger-30.png" alt="messenger">
+              </a></li>
+            </ul>
+            </nav>
+  
+            <div class="btn group d-flex">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Talk an expert
+              </button>
+  
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                      <button type="button" class="btn-close bg-success" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="input-group mb-3">
+                        <label class="input-group-text bg-transparent border-top-0 border-end-0 border-start-0" for="inputGroupSelect01">I'm a/an</label>
+                        <select class="form-select border-top-0 border-end-0 border-start-0" id="inputGroupSelect01">
+                          <option selected>Freelancer/Own Business</option>
+                          <option value="1">Other Options</option>
+                        </select>
+                      </div>
+                      <div class="input-group mb-3">
+                        <label class="input-group-text bg-transparent border-top-0 border-end-0 border-start-0" for="inputGroupSelect01">I Want</label>
+                        <select class="form-select border-top-0 border-end-0 border-start-0" id="inputGroupSelect01">
+                          <option selected>Call me to Discuss my Questions</option>
+                          <option value="1">Email me your digital prospectus</option>
+                          <option value="2">Mail me your full information pack</option>
+                        </select>
+                      </div>
+                      <div class="input-group mb-3">
+                        <label class="input-group-text bg-transparent border-top-0 border-end-0 border-start-0" for="inputGroupSelect01">I interested</label>
+                        <select class="form-select border-top-0 border-end-0 border-start-0" id="inputGroupSelect01">
+                          <option selected>Financial Consultant</option>
+                          <option value="1">Accounting Services</option>
+                          <option value="2">Tax Services</option>
+                          <option value="3">Careers</option>
+                          <option value="4">Request Additional Information</option>
+                        </select>
+                      </div>
+                      <form class="row g-3">
+                        <div class="col-12">
+                          <label for="inputName" class="form-label">Your Name*</label>
+                          <input type="text" class="form-control" id="inputName" placeholder="Eg:John Doe" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputEmail4" class="form-label">Your Email*</label>
+                          <input type="email" class="form-control" id="inputEmail4" placeholder="name@company.com" required>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="inputPhone" class="form-label">Phone Number</label>
+                          <input type="tel" class="form-control" id="inputPhone" placeholder="Full Number(incl. prefix)">
+                        </div>
+                        <div class="col-12">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck" checked>
+                            <label class="form-check-label" for="gridCheck">
+                              I agree to receive communications from FinLab.
+                            </label>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer border-0">
+                      <button type="button" class="btn btn-success" data-bs-dismiss="modal">Send Message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <nav class="cta d-flex">
+                <a class="nav-link" href="#">
+                  <img src="/assets/images/icons8-carrello-della-spesa-40.png" alt="cart" style="width: 30px; height: 30px;">
+                </a>
+                <a class="nav-link" href="#">
+                  <img src="/assets/images/icons8-ricerca-40.png" alt="search" style="width: 30px; height: 30px;">
+                </a>
+              </nav>
+            </div>
+          </div>
+        </nav>
+        <!------- SECOND NAV ------->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Homepage
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Home 1</a></li>
+                    <li><a class="dropdown-item" href="#">Home 2</a></li>
+                  </ul>
+                </li>              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Who We Are
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">About Us</a></li>
+                    <li><a class="dropdown-item" href="#">Our Leadership Team</a></li>
+                    <li><a class="dropdown-item" href="#">Why Choose Us</a></li>
+                    <li><a class="dropdown-item" href="#">Our History</a></li>
+                    <li><a class="dropdown-item" href="#">Careers</a></li>
+                  </ul>
+                </li>              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    What We Do
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Accounting Services</a></li>
+                    <li><a class="dropdown-item" href="#">Audit & Tax Services</a></li>
+                    <li><a class="dropdown-item" href="#">Capital Investments</a></li>
+                    <li><a class="dropdown-item" href="#">Finance & Restructuring</a></li>
+                    <li><a class="dropdown-item" href="#">Financial Consultant</a></li>
+                    <li><a class="dropdown-item" href="#">Portfolio Management</a></li>
+                    <li><a class="dropdown-item" href="#">Technology Advisory</a></li>
+                    <li><a class="dropdown-item" href="#">All Services Page</a></li>
+                  </ul>
+                </li>              
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Case Studies
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Cases Grid 1</a></li>
+                    <li><a class="dropdown-item" href="#">Cases Grid 2</a></li>
+                    <li><a class="dropdown-item" href="#">Cases Grid 3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Blog & Insights</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>  
+        
+        <!------- HERO CASE STUDIES ------->
+        <div class="hero d-flex flex-column align-items-center">
+          <h1 class="text-light">Case Studies</h1>
+          <p class="text-light">Contact our Toll-Free Number or Send us a Message.</p>
+       </div>  
+      </header>
     <!---------------------------- MAIN ---------------------------->
     <main>
         

@@ -1,3 +1,44 @@
+/* ---------------------------- HEADER & HERO ---------------------------- */
+header {
+    background-image: url(/assets/images/hero.jpg);
+    background-repeat: no-repeat;
+}
+
+.social-nav > li {
+    list-style-type: none;
+}
+
+.navbar {
+    font-family:sans-serif;
+    border-top: 1px solid white;
+}
+
+.btn.btn-success {
+    background-color: #2cbc63;
+    border-radius: 2rem;
+}
+
+.btn.btn-success:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+.btn-close.bg-success{
+    background-color: #2cbc63;
+}
+
+a {
+    color: white;
+}
+
+ul.navbar-nav > li:hover {
+    border-top: 2px solid white;
+}
+
+.hero{
+    padding: 100px 0;
+}
+
+
 
 /* ---------------------------- FOOTER ---------------------------- */
 
