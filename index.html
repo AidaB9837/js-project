@@ -286,22 +286,24 @@
          <div class="row">
            <div class="col-lg-6 col col-sm-12 p-3">
             <h5 class="services-header"> SERVICES WE PROVIDE</h5>
-            <p class="services-paragraph">Trusted     Commercial Finance Broker.</p>
+            <p class="services-paragraph">Trusted Commercial Finance Broker.</p>
            </div>
            <div class="col-lg-6 col col-sm-12 d-flex p-4">
             <div class="card border-0" style="width: 18rem;">
               <div class="card-body services-top-card">
-                <h5 class="card-title">435
-                  <span>Million</span>
-                </h5>
+                <div class="d-flex">
+                 <h5 id="card-title-number" class="card-title"></h5> 
+                 <span>Million</span>
+                </div>  
                 <p class="card-text">Information on 400+ million companies worldwide.</p>
               </div>
             </div>
             <div class="card border-0" style="width: 18rem;">
               <div class="card-body services-top-card">
-                <h5 class="card-title">100
+                <div class="d-flex">
+                  <h5 id="card-title-number2" class="card-title"></h5>  
                   <span>Percent</span>
-                </h5>               
+                </div>               
                 <p class="card-text">Overall client satisfaction Macquarie Bank VAN Survey</p>
               </div>
             </div>
@@ -756,12 +758,12 @@
      <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
-        <form class="modal-content">
+        <form name="form1" id="modal-form"class="modal-content">
           <div class="modal-header">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <select class="form-select border-0 border-bottom" aria-label="Default select example" id="selectOne">
+            <select name="I'am" class="form-select border-0 border-bottom" aria-label="Default select example" id="selectOne">
               <option value="0">Freelencer/Own Business</option>
               <option value="1">Other Options</option>
             </select>
@@ -779,23 +781,23 @@
             </select>
             <div class="mb-3">
               <label for="fullNameInput" class="form-label">Your Name *</label>
-              <input type="text" class="form-control fullName" id="fullNameInput" placeholder="Eg: Marco Ripa">
+              <input name="Your Name" type="text" class="form-control fullName" id="fullNameInput" placeholder="Eg: Marco Ripa">
             </div>
             <div class="mb-3">
               <label for="emailInput" class="form-label">Your Email *</label>
-              <input type="email" class="form-control" id="emailInput" placeholder="name@company.com">
+              <input name="Email" type="email" class="form-control" id="emailInput" placeholder="name@company.com">
             </div>
             <div class="mb-3">
               <label for="phoneInput" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control phoneNumber" id="phoneInput" placeholder="Full number (Inc. Prefix)">
+              <input name="Phone Number" type="tel" class="form-control phoneNumber" id="phoneInput" placeholder="Full number (Inc. Prefix)">
             </div>
             <div class="mb-3">
               <label for="messageInput" class="form-label">Message</label>
-              <textarea class="form-control" id="messageInput" rows="3"
+              <textarea name="message" class="form-control" id="messageInput" rows="3"
               placeholder="Enter Message"></textarea>
             </div>
             <div class="form-check">
-              <input class="checkbox" type="checkbox" value="" id="checkbox" checked>
+              <input name="checkbox" class="checkbox" type="checkbox" id="checkbox" checked>
               <label class="form-check-label" for="flexCheckDefault">
                 I agree to receive communications from FinLab.
               </label>

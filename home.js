@@ -1,44 +1,65 @@
 //console log data from the form inside modal
 const modalBtn = document.getElementById('modalBtn')
+const form = document.getElementById('modal-form')
+
 modalBtn.addEventListener('click', function(e) {
     e.preventDefault();
+    let obj = {}
 
-    const selectOne = document.getElementById('selectOne').value
-    if (selectOne == 0) {
-        console.log('Freelencer/Own Business')
-    } else {
-        console.log('Other Options')
-    }
-    const selectTwo = document.getElementById('selectTwo').value
-    switch(selectTwo) {
-        case '0': console.log('Call')
-        break;
-        case '1': console.log('Email')
-        break;
-        case '2': console.log('Letter')
-        break
-    }
-    const selectThree = document.getElementById('selectThree').value
-    switch(selectThree) {
-        case '0': console.log('Financial Consultant')
-        break;
-        case '1': console.log('Accounting Services')
-        break;
-        case '2': console.log('Tax Services')
-        break;
-        case '3': console.log('Careers')
-        break;
-        case '4': console.log('Request Additional Information')
-        break;
+     const selectOne = document.getElementById('selectOne')
+    if (selectOne.value == 0) {
+        obj[selectOne.name] = 'Freelencer/Own Business'
+    } 
+    else {
+        obj[selectOne.name] = 'Other Options'
     }
 
-    const fullName = document.getElementById('fullNameInput').value
-    const email = document.getElementById('emailInput').value
-    const phoneNum = document.getElementById('phoneInput').value
-    const message = document.getElementById('messageInput').value
+    let elements = document.querySelectorAll("form[name='form1'] input");
+    elements.forEach(function(element) {
+       if(element[type='checkbox']) {
+           obj[element.name] = element.checked
+       }
+       else {
+          obj[element.name] = element.value
+       }
+    })
 
-    const checkbox = document.getElementById('checkbox').checked
-    console.log('Name: ' + fullName + '\nEmail: ' + email + '\nPhone Number: ' + phoneNum + '\nMessage: ' + message + '\nAgree to receive communications: ' + checkbox)
+
+    const message = document.getElementById('messageInput')
+    obj[message.name] = message.value
+
+    console.log(JSON.stringify(obj))
+   
+    // const selectTwo = document.getElementById('selectTwo').value
+    // switch(selectTwo) {
+    //     case '0': console.log('Call')
+    //     break;
+    //     case '1': console.log('Email')
+    //     break;
+    //     case '2': console.log('Letter')
+    //     break
+    // }
+    // const selectThree = document.getElementById('selectThree').value
+    // switch(selectThree) {
+    //     case '0': console.log('Financial Consultant')
+    //     break;
+    //     case '1': console.log('Accounting Services')
+    //     break;
+    //     case '2': console.log('Tax Services')
+    //     break;
+    //     case '3': console.log('Careers')
+    //     break;
+    //     case '4': console.log('Request Additional Information')
+    //     break;
+    // }
+
+    // const fullName = document.getElementById('fullNameInput').value
+    // const email = document.getElementById('emailInput').value
+    // const phoneNum = document.getElementById('phoneInput').value
+    // const message = document.getElementById('messageInput').value
+
+    //  const checkbox = document.getElementById('checkbox').checked
+    // console.log('Name: ' + fullName + '\nEmail: ' + email + '\nPhone Number: ' + phoneNum + '\nMessage: ' + message + '\nAgree to receive communications: ' + checkbox)
 })
 
 //opening hamburger menu
@@ -111,3 +132,27 @@ selectCookie.addEventListener('click', (e) => {
 
     cookieSection.style.display = 'none'
 })
+
+//changing number
+
+const numberOne = document.getElementById('card-title-number')
+const numberTwo = document.getElementById('card-title-number2')
+
+let counter = 0;
+let limit = 435;
+
+function countOne() {
+    if (counter <= limit ){
+    numberOne.textContent = counter++}
+}
+
+setInterval(countOne, 20)
+
+let limitTwo = 100
+function countTwo() {
+    if (counter <= limitTwo){
+    numberTwo.textContent = counter++}
+}
+
+setInterval(countTwo, 50)
+

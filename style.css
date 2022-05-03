@@ -176,10 +176,9 @@
   font-size: 48px;
 }
 
-.services-top-card h5 span {
+.services-top-card span {
   color: #5c667d;
   font-size: 16px;
-  vertical-align: super;
 }
 
 .services-top-card p {
