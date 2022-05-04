@@ -13,6 +13,30 @@ modalBtn.addEventListener('click', function(e) {
     else {
         obj[selectOne.name] = 'Other Options'
     }
+    
+    const selectTwo = document.getElementById('selectTwo')
+    switch(selectTwo.value) {
+        case '0': obj[selectTwo.name] = 'Call'
+        break;
+        case '1': obj[selectTwo.name] = 'Email'
+        break;
+        case '2': obj[selectTwo.name] = 'Letter'
+        break
+    }
+
+    const selectThree = document.getElementById('selectThree')
+    switch(selectThree.value) {
+        case '0': obj[selectThree.name] = 'Financial Consultant'
+        break;
+        case '1': obj[selectThree.name] = 'Accounting Services'
+        break;
+        case '2': obj[selectThree.name] = 'Tax Services'
+        break;
+        case '3': obj[selectThree.name] = 'Careers'
+        break;
+        case '4': obj[selectThree.name] = 'Request Additional Information'
+        break;
+    }
 
     let elements = document.querySelectorAll("form[name='form1'] input");
     elements.forEach(function(element) {
@@ -29,37 +53,6 @@ modalBtn.addEventListener('click', function(e) {
     obj[message.name] = message.value
 
     console.log(JSON.stringify(obj))
-   
-    // const selectTwo = document.getElementById('selectTwo').value
-    // switch(selectTwo) {
-    //     case '0': console.log('Call')
-    //     break;
-    //     case '1': console.log('Email')
-    //     break;
-    //     case '2': console.log('Letter')
-    //     break
-    // }
-    // const selectThree = document.getElementById('selectThree').value
-    // switch(selectThree) {
-    //     case '0': console.log('Financial Consultant')
-    //     break;
-    //     case '1': console.log('Accounting Services')
-    //     break;
-    //     case '2': console.log('Tax Services')
-    //     break;
-    //     case '3': console.log('Careers')
-    //     break;
-    //     case '4': console.log('Request Additional Information')
-    //     break;
-    // }
-
-    // const fullName = document.getElementById('fullNameInput').value
-    // const email = document.getElementById('emailInput').value
-    // const phoneNum = document.getElementById('phoneInput').value
-    // const message = document.getElementById('messageInput').value
-
-    //  const checkbox = document.getElementById('checkbox').checked
-    // console.log('Name: ' + fullName + '\nEmail: ' + email + '\nPhone Number: ' + phoneNum + '\nMessage: ' + message + '\nAgree to receive communications: ' + checkbox)
 })
 
 //opening hamburger menu
@@ -154,5 +147,5 @@ function countTwo() {
     numberTwo.textContent = counter++}
 }
 
-setInterval(countTwo, 50)
+setInterval(countTwo, 60)
 
