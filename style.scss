@@ -159,11 +159,10 @@ $ugly-gray: rgb(92, 102, 125);
     h5 {
         color: $weird-green;
         font-size: 48px;
-        span {
-            color: $ugly-gray;
-            font-size: 16px;
-            vertical-align: super;
-        }
+    }
+    span {
+        color: $ugly-gray;
+        font-size: 16px;
     }
     p {
         color: $ugly-gray;
