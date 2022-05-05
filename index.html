@@ -9,11 +9,10 @@
     <link rel="stylesheet" type="text/css" href="/style.css">
 </head>
 <body>
-      <!-- NAVBAR -->
-      <header>
-        <!------- FIRST NAV ------->
+    <header>
+ <!------- START FIRST NAV ------->
       <nav class="navbar navbar-light bg-transparent">
-          <div class="container">
+          <div class="container d-flex justify-content-start">
             <a class="navbar-brand" href="#">
               <img src="/assets/images/logo.png" alt="logo-finlab">
             </a>
@@ -30,7 +29,7 @@
               </a></li>
             </ul>
             </nav>
-  
+          </div>  
             <div class="btn group d-flex">
               <!-- Button trigger modal -->
               <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -101,7 +100,7 @@
                 </div>
               </div>
               <nav class="cta d-flex">
-                <a class="nav-link" href="#">
+                <a class="nav-link" tabindex="0" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover focus" href="#">
                   <img src="/assets/images/icons8-carrello-della-spesa-40.png" alt="cart" style="width: 30px; height: 30px;">
                 </a>
                 <a class="nav-link" href="#">
@@ -109,9 +108,36 @@
                 </a>
               </nav>
             </div>
-          </div>
         </nav>
-        <!------- SECOND NAV ------->
+ <!------- END FIRST NAV ------->  
+
+ <!------- START SECOND NAV ------->
+      <div>
+      <!------- START HAMBURGER MENU - OFFCANVAS ------->
+        <a class="btn" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <img src="/assets/images/icons8-menu-arrotondato-40.png">
+        </a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <img class="img-offcan" src="/assets/images/c4-1024x512.jpg">
+              <p>Our firm provides the expert support organisations need to thrive in a fast-changing world.</p>
+              <p><strong>Address:</strong> 1270 Beverly Rd Brooklyn, New York 11226 United States.</p>
+              <p><strong>Phone:</strong> <span class="green-info">0172 610 33 181</span></p>
+              <p><strong>Mail:</strong> <span class="green-info">info@example.com</span></p>
+              <br>
+              <label for="data-form">Request a callback</label> <br>
+              <input type="text" id="data-form" placeholder="Your Name*" required> <br>
+              <input type="tel" id="data-form" placeholder="Phone Number*" required> <br>
+              <button type="button" class="btn btn-success btn-form">Request a Callback</button>
+            </div>
+          </div>
+        </div>
+      <!------- END HAMBURGER MENU - OFFCANVAS ------->
+
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
           <div class="container-fluid">
             <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
@@ -175,13 +201,16 @@
             </div>
           </div>
         </nav>  
-        
-        <!------- HERO CASE STUDIES ------->
+      </div>  
+<!------- END SECOND NAV ------->
+
+<!------- START HERO CASE STUDIES ------->
         <div class="hero d-flex flex-column align-items-center">
           <h1 class="text-light">Case Studies</h1>
           <p class="text-light">Contact our Toll-Free Number or Send us a Message.</p>
        </div>  
-      </header>
+<!------- END HERO CASE STUDIES ------->
+    </header>
     <!---------------------------- MAIN ---------------------------->
     <main>
         
