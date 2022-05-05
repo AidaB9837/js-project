@@ -202,7 +202,7 @@ footer .list-group-item {
 /*------------------------MEDIA QUERY MOBILE ------------------------*/
 @media only screen and (max-width:430px) {
 
-    .container {
+    .card-container {
         display: none;
     }
 
@@ -222,6 +222,16 @@ footer .list-group-item {
     }
     .card-text{
         font-size: 0.6rem;
+    }
+    .cointainer.b{
+        display: grid;
+        grid-column: 2;
+    }
+    .col-5 p{
+        display:none;
+    }
+    .email-input{
+        margin-top:3rem
     }
 
 }
