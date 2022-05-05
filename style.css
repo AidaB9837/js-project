@@ -2,18 +2,13 @@
 --blue: #023A51;
 --green:#35BF6A;
 }
+.text-blue{
+    color: var(--blue) !important;
+}
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-@media screen and (max-width: 320px){
-    html{
-        width: 320px;
-        overflow: auto;
-    }
-}
-li{
-    list-style-type: none;
-}
+
 .h-750{
     height: 750px;
 }
@@ -131,11 +126,6 @@ div.offcanvas >* {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    background-image: url(./asset/56763.png) ;
-    background-size: 15px;
-    background-position: center;
-    background-color: white;
-    background-repeat: no-repeat;
 }
 #modal-button,#modal-button2{
     height: 40px;
@@ -147,7 +137,7 @@ div.offcanvas >* {
 }
 #modal-button2{
     width: fit-content;
-    border-radius: 1000px;
+    border-radius: 100px;
 }
 
 #offcanvas-button1:focus,#modal-button:focus{
@@ -200,13 +190,43 @@ div.offcanvas >* {
 .widget button:hover{
     background-position: left;
 }
+.second-container{
+    margin-top: 50px;
+}
 
 .second-container>div:first-child{
     color: var(--blue); 
     font-size: 54px;
     margin: 0 15%;
 }
-
+.third-container{
+    background: linear-gradient( #ECF3F6, white);
+    padding: 0 10%;
+}
+.box{
+    font-size: 12px;
+    background-color: #023A5130;
+    border-radius: 999px;
+}
+.testimonial{
+    height: 100px;
+    width: 100px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:50% ;
+    filter: grayscale(100%);
+}
+.testimonials{
+    height: 100px;
+}
+@media screen and (max-width: 320px){
+    html{
+        width: 320px;
+        overflow: auto;
+    }
+}
+/* < sm breakpoint */
 @media only screen and (max-width:576px){
     #grid .row *{
         margin: 5% 0;
@@ -222,7 +242,13 @@ div.offcanvas >* {
         font-size: 30px;
         margin: 0 5%!important;
     }
+}/* > sm breakpoint */
+@media screen and (min-width: 576px) {
+    .second-container{
+        margin-top: 170px
+    }
 }
+/* < md breakpoint */
 @media only screen and (max-width: 769px){
     .big-text{
         font-size: 30px !important;
@@ -235,7 +261,7 @@ div.offcanvas >* {
         font-size: 30px;
     }
 }
-
+/* > md breakpoint */
 @media only screen and (min-width: 768px){
     .real-body>*{
         padding: 0 10%;
@@ -244,6 +270,14 @@ div.offcanvas >* {
         border-bottom: 1 px solid rgba(256,256,256, 0.1);
     }
 }
+/* < lg breakpoint */
+@media only screen and (max-width: 993px){
+    .third-container div:first-of-type{
+        font-size: 24px !important;
+    }
+
+}
+/* 4k */
 @media only screen and (min-width:1441px) {
     .img-creditcard{
         width: 100%;
