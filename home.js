@@ -149,3 +149,15 @@ function countTwo() {
 
 setInterval(countTwo, 60)
 
+//hovering card onto image
+
+// const cardHover = document.getElementById('card-hover')
+// const imageHover = document.getElementById('image-hover')
+ 
+// imageHover.addEventListener('mouseover', () => {
+//     cardHover.style.display = 'block'
+// })
+
+// imageHover.addEventListener('mouseleave', () => {
+//     cardHover.style.display = 'none'
+// })

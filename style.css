@@ -1,3 +1,30 @@
+.changing-btn {
+  background-color: #023a51;
+  color: white;
+  border: none;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.changing-btn svg {
+  margin-bottom: 2rem;
+}
+
+.changing-btn:hover {
+  width: 65px;
+  height: 65px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.changing-btn:hover > svg {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
 .nav-section {
   position: absolute;
   top: 0;
@@ -211,13 +238,17 @@
   width: 16rem;
 }
 
-.services-row-four button {
-  background-color: #023a51;
-  color: white;
-  font-size: 32px;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
+.services-row-four {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .services-row-four span {
@@ -253,80 +284,113 @@
   height: 200px;
 }
 
-.why .why-paragraph {
+.knowledge .card-content:hover .card-hover {
+  width: 80%;
+  height: 80%;
+}
+
+.knowledge .card-hover {
+  background-color: #023a51;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 0;
+  height: 80%;
+  overflow: hidden;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.knowledge .card-hover img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.knowledge .card-hover h6 {
+  margin-top: 1rem;
+  color: #4fbf4f;
+  font-size: 14px;
+}
+
+.knowledge .card-hover p {
+  color: white;
+  font-size: 18px;
+}
+
+.knowledge .why .why-paragraph {
   font-size: 56px;
   color: #023a51;
   font-weight: bold;
 }
 
-.why h5 {
+.knowledge .why h5 {
   color: #4fbf4f;
   font-style: bold;
   font-size: 28px;
 }
 
-.team-image {
+.knowledge .team-image {
   max-height: 700px;
   width: 100%;
 }
 
-.team .team-paragraph {
+.knowledge .team .team-paragraph {
   font-size: 56px;
   color: #023a51;
   font-weight: bold;
 }
 
-.team .team-header {
+.knowledge .team .team-header {
   color: #4fbf4f;
   font-size: 16px;
   font-weight: bold;
 }
 
-.team li {
+.knowledge .team li {
   color: #5c667d;
 }
 
-.team h5 {
+.knowledge .team h5 {
   color: #023a51;
   font-size: 16px;
   font-weight: bold;
 }
 
-.team h6 {
+.knowledge .team h6 {
   color: #5c667d;
 }
 
-.team-row-one {
+.knowledge .team-row-one {
   border-bottom-style: solid;
   border-bottom-width: 10px;
   border-bottom-color: #023a51;
 }
 
-.news .quote {
+.knowledge .news .quote {
   width: 60px;
 }
 
-.news h5 {
+.knowledge .news h5 {
   color: #023a51;
   font-size: 16px;
   font-weight: bold;
 }
 
-.news h6 {
+.knowledge .news h6 {
   color: #5c667d;
 }
 
-.news h3 {
+.knowledge .news h3 {
   color: #023a51;
   font-size: 36px;
 }
 
-.news .photos {
+.knowledge .news .photos {
   height: 257px;
   overflow: hidden;
 }
 
-.news .row-three-news img {
+.knowledge .news .row-three-news img {
   width: 90%;
   margin: auto;
   height: 100%;
@@ -334,11 +398,11 @@
      object-fit: cover;
 }
 
-.news .row-three-news .card {
+.knowledge .news .row-three-news .card {
   margin: auto;
 }
 
-.news-row {
+.knowledge .news-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -347,105 +411,105 @@
   overflow: hidden;
 }
 
-.news-row img {
+.knowledge .news-row img {
   width: 12rem;
 }
 
-footer {
+.knowledge footer {
   background-color: #023a51;
 }
 
-footer h3 {
+.knowledge footer h3 {
   color: white;
   font-size: 60px;
   width: 10rem;
 }
 
-footer h5 {
+.knowledge footer h5 {
   color: #5c667d;
   font-size: 18px;
 }
 
-footer h6, footer p {
+.knowledge footer h6, .knowledge footer p {
   color: #5c667d;
   font-size: 14px;
 }
 
-footer button {
+.knowledge footer button {
   width: 12rem !important;
   height: 3rem;
 }
 
-footer .list-group-item {
+.knowledge footer .list-group-item {
   background-color: #023a51;
   color: #5c667d;
   border-style: none;
 }
 
-footer .first {
+.knowledge footer .first {
   color: white;
 }
 
-footer .form-control {
+.knowledge footer .form-control {
   background-color: #023a51;
 }
 
-footer .input-button {
+.knowledge footer .input-button {
   width: 5rem !important;
 }
 
-.cookie-policy {
+.knowledge .cookie-policy {
   position: fixed;
   bottom: 0;
   z-index: 1000;
 }
 
-.cookie-policy .card {
+.knowledge .cookie-policy .card {
   background-color: black;
 }
 
-.cookie-policy .card h5 {
+.knowledge .cookie-policy .card h5 {
   color: white;
 }
 
-.cookie-policy .card p {
+.knowledge .cookie-policy .card p {
   color: #5c667d;
 }
 
-.cookie-policy .card .btn-cookie {
+.knowledge .cookie-policy .card .btn-cookie {
   width: 100%;
   margin-top: 1rem;
   background-color: white;
   color: black;
 }
 
-.cookie-policy .card .btn-close {
+.knowledge .cookie-policy .card .btn-close {
   background-color: #5c667d;
 }
 
-.cookie-policy .card h6 {
+.knowledge .cookie-policy .card h6 {
   color: white;
   margin-top: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
-  .hero-section {
+  .knowledge .hero-section {
     height: 40rem;
   }
-  .carousel-card {
+  .knowledge .carousel-card {
     top: 30%;
     left: 0%;
   }
-  .carousel-card h5 {
+  .knowledge .carousel-card h5 {
     font-size: 50px;
   }
-  .carousel-card span {
+  .knowledge .carousel-card span {
     font-size: 15px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .hero-section {
+  .knowledge .hero-section {
     height: 30rem;
   }
 }
