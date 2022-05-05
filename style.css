@@ -238,4 +238,15 @@ footer .list-group-item {
 
 /*------------------------MEDIA QUERY TABLET ------------------------*/
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .card-container {
+        padding: 1rem;
+    }
+    .col-5 p{
+        display:none;
+    }
+    .email-input{
+        margin-top:3rem
+    }
+}
