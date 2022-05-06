@@ -226,7 +226,7 @@ $ugly-gray: rgb(92, 102, 125);
         font-size: 28px;
     }
 }
-// page-content-two: kwowledge
+// page-content-two: knowledge
 .knowledge {
     .knowledge-paragraph {
         @include page-content-paragraph
@@ -250,7 +250,6 @@ $ugly-gray: rgb(92, 102, 125);
         height: 80%
      }
     .card-hover {
-       //padding: 1rem;
        background-color: $weird-blue;
        position: absolute;
        bottom: 10%;
@@ -272,7 +271,7 @@ $ugly-gray: rgb(92, 102, 125);
           color: white;
           font-size: 18px
     }
-   
+  }
 }
 // page-content-three: why
 .why {
@@ -439,5 +438,4 @@ footer {
     .hero-section {
         height: 30rem;
     }
-}
 }

@@ -317,80 +317,80 @@
   font-size: 18px;
 }
 
-.knowledge .why .why-paragraph {
+.why .why-paragraph {
   font-size: 56px;
   color: #023a51;
   font-weight: bold;
 }
 
-.knowledge .why h5 {
+.why h5 {
   color: #4fbf4f;
   font-style: bold;
   font-size: 28px;
 }
 
-.knowledge .team-image {
+.team-image {
   max-height: 700px;
   width: 100%;
 }
 
-.knowledge .team .team-paragraph {
+.team .team-paragraph {
   font-size: 56px;
   color: #023a51;
   font-weight: bold;
 }
 
-.knowledge .team .team-header {
+.team .team-header {
   color: #4fbf4f;
   font-size: 16px;
   font-weight: bold;
 }
 
-.knowledge .team li {
+.team li {
   color: #5c667d;
 }
 
-.knowledge .team h5 {
+.team h5 {
   color: #023a51;
   font-size: 16px;
   font-weight: bold;
 }
 
-.knowledge .team h6 {
+.team h6 {
   color: #5c667d;
 }
 
-.knowledge .team-row-one {
+.team-row-one {
   border-bottom-style: solid;
   border-bottom-width: 10px;
   border-bottom-color: #023a51;
 }
 
-.knowledge .news .quote {
+.news .quote {
   width: 60px;
 }
 
-.knowledge .news h5 {
+.news h5 {
   color: #023a51;
   font-size: 16px;
   font-weight: bold;
 }
 
-.knowledge .news h6 {
+.news h6 {
   color: #5c667d;
 }
 
-.knowledge .news h3 {
+.news h3 {
   color: #023a51;
   font-size: 36px;
 }
 
-.knowledge .news .photos {
+.news .photos {
   height: 257px;
   overflow: hidden;
 }
 
-.knowledge .news .row-three-news img {
+.news .row-three-news img {
   width: 90%;
   margin: auto;
   height: 100%;
@@ -398,11 +398,11 @@
      object-fit: cover;
 }
 
-.knowledge .news .row-three-news .card {
+.news .row-three-news .card {
   margin: auto;
 }
 
-.knowledge .news-row {
+.news-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,105 +411,105 @@
   overflow: hidden;
 }
 
-.knowledge .news-row img {
+.news-row img {
   width: 12rem;
 }
 
-.knowledge footer {
+footer {
   background-color: #023a51;
 }
 
-.knowledge footer h3 {
+footer h3 {
   color: white;
   font-size: 60px;
   width: 10rem;
 }
 
-.knowledge footer h5 {
+footer h5 {
   color: #5c667d;
   font-size: 18px;
 }
 
-.knowledge footer h6, .knowledge footer p {
+footer h6, footer p {
   color: #5c667d;
   font-size: 14px;
 }
 
-.knowledge footer button {
+footer button {
   width: 12rem !important;
   height: 3rem;
 }
 
-.knowledge footer .list-group-item {
+footer .list-group-item {
   background-color: #023a51;
   color: #5c667d;
   border-style: none;
 }
 
-.knowledge footer .first {
+footer .first {
   color: white;
 }
 
-.knowledge footer .form-control {
+footer .form-control {
   background-color: #023a51;
 }
 
-.knowledge footer .input-button {
+footer .input-button {
   width: 5rem !important;
 }
 
-.knowledge .cookie-policy {
+.cookie-policy {
   position: fixed;
   bottom: 0;
   z-index: 1000;
 }
 
-.knowledge .cookie-policy .card {
+.cookie-policy .card {
   background-color: black;
 }
 
-.knowledge .cookie-policy .card h5 {
+.cookie-policy .card h5 {
   color: white;
 }
 
-.knowledge .cookie-policy .card p {
+.cookie-policy .card p {
   color: #5c667d;
 }
 
-.knowledge .cookie-policy .card .btn-cookie {
+.cookie-policy .card .btn-cookie {
   width: 100%;
   margin-top: 1rem;
   background-color: white;
   color: black;
 }
 
-.knowledge .cookie-policy .card .btn-close {
+.cookie-policy .card .btn-close {
   background-color: #5c667d;
 }
 
-.knowledge .cookie-policy .card h6 {
+.cookie-policy .card h6 {
   color: white;
   margin-top: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
-  .knowledge .hero-section {
+  .hero-section {
     height: 40rem;
   }
-  .knowledge .carousel-card {
+  .carousel-card {
     top: 30%;
     left: 0%;
   }
-  .knowledge .carousel-card h5 {
+  .carousel-card h5 {
     font-size: 50px;
   }
-  .knowledge .carousel-card span {
+  .carousel-card span {
     font-size: 15px;
   }
 }
 
 @media only screen and (max-width: 576px) {
-  .knowledge .hero-section {
+  .hero-section {
     height: 30rem;
   }
 }

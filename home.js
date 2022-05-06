@@ -149,15 +149,12 @@ function countTwo() {
 
 setInterval(countTwo, 60)
 
-//hovering card onto image
+//chat icon
 
-// const cardHover = document.getElementById('card-hover')
-// const imageHover = document.getElementById('image-hover')
- 
-// imageHover.addEventListener('mouseover', () => {
-//     cardHover.style.display = 'block'
-// })
+const chatIcon = document.getElementById('chatIcon')
 
-// imageHover.addEventListener('mouseleave', () => {
-//     cardHover.style.display = 'none'
-// })
+function vibrateIcon() {
+   chatIcon.style.width = '100'
+}
+
+setInterval(vibrateIcon, 100)
