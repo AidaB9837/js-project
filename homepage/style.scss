@@ -17,6 +17,29 @@ $ugly-gray: rgb(92, 102, 125);
     color: $ugly-gray;
     font-weight: bold;
 }
+
+// reusable components
+.changing-btn {
+        background-color: $weird-blue;
+        color: white;
+        border:none;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        svg {
+            margin-bottom: 2rem;
+        }
+}
+.changing-btn:hover {
+    width: 65px;
+    height: 65px;
+    transition: 1s ease;
+}
+.changing-btn:hover>svg  {
+    transform: rotate(360deg);
+    transition: 0.5s ease;
+}
+
 // nav bar
 .nav-section {
     position: absolute;
@@ -194,20 +217,16 @@ $ugly-gray: rgb(92, 102, 125);
     }
 }
 .services-row-four {
-    button  {
-    background-color: $weird-blue;
-    color: white;
-    font-size: 32px;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
     span {
         color: $ugly-gray;
         font-size: 28px;
     }
 }
-// page-content-two: kwowledge
+// page-content-two: knowledge
 .knowledge {
     .knowledge-paragraph {
         @include page-content-paragraph
@@ -226,6 +245,33 @@ $ugly-gray: rgb(92, 102, 125);
         width: 100%;
         height: 200px;
     }
+    .card-content:hover .card-hover {
+        width: 80%;
+        height: 80%
+     }
+    .card-hover {
+       background-color: $weird-blue;
+       position: absolute;
+       bottom: 10%;
+       left: 10%;
+       width: 0;
+       height: 80%;
+       overflow: hidden;
+       transition: .2s ease;
+       img {
+        width: 3rem;
+        height: 3rem;
+       };
+       h6 { 
+           margin-top: 1rem;
+           color: $weird-green;
+           font-size: 14px;
+       };
+       p {
+          color: white;
+          font-size: 18px
+    }
+  }
 }
 // page-content-three: why
 .why {

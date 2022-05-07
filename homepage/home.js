@@ -149,3 +149,12 @@ function countTwo() {
 
 setInterval(countTwo, 60)
 
+//chat icon
+
+const chatIcon = document.getElementById('chatIcon')
+
+function vibrateIcon() {
+   chatIcon.style.width = '100'
+}
+
+setInterval(vibrateIcon, 100)
