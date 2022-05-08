@@ -5,15 +5,28 @@
 .text-blue{
     color: var(--blue) !important;
 }
+.text-green{
+    color: var(--green) !important;
+}
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
+::-moz-selection  {
+    background: var(--green);
+    color: white !important;
+    opacity: 1 !important;
+}
+::selection   {
+    background: var(--green);
+    color: white !important;
+    opacity: 1 !important;
+}
 .h-750{
     height: 750px;
 }
 a{
     text-decoration: none;
+    color: var(--blue);
 }
 #nav1{
     height: 50px;
@@ -220,6 +233,71 @@ div.offcanvas >* {
 .testimonials{
     height: 100px;
 }
+
+.fourth-container{
+    background: linear-gradient( white,#ECF3F6);
+
+}
+
+.hoverable:hover>svg,.hoverable:hover>a{
+fill: var(--blue);
+color: var(--green) !important;
+transition: all 0.3s;
+}
+
+.card-container a .card:hover{
+    color: white;
+    background-color: var(--green);
+    transition: all 0.3s;
+}
+
+.footer-row-one{
+    background-image: url(/assets/world.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:50%;
+}
+footer, .form-control {
+    background-color: var(--blue);
+  }
+  
+  footer h3 {
+    color: white;
+    font-size: 60px;
+    width: 10rem;
+  }
+  
+  footer h5 {
+    color: #5c667d;
+    font-size: 18px;
+  }
+  
+  footer h6, footer p {
+    color: #5c667d;
+    font-size: 14px;
+  }
+  
+  footer button {
+    width: 12rem !important;
+    height: 3rem;
+  }
+  
+  footer .list-group-item {
+    background-color: #023a51;
+    border-style: none;
+  }
+  footer .list-group-item a, .first{
+      color: white;
+      opacity: .7;
+  }
+  footer .list-group-item a:hover, .first{
+      opacity: 1;
+  }
+  
+  footer .input-button {
+    width: 5rem !important;
+  }
+  
 @media screen and (max-width: 320px){
     html{
         width: 320px;
@@ -259,6 +337,9 @@ div.offcanvas >* {
     }
     #md-fs-resize{
         font-size: 30px;
+    }
+    .fourth-container>div>div{
+        width: 100% !important;
     }
 }
 /* > md breakpoint */
