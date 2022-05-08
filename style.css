@@ -1,7 +1,18 @@
 /* ---------------------------- HEADER & HERO ---------------------------- */
 header {
-    background-image: url(/assets/images/hero.jpg);
+    max-width: 100vw;
+    background-image: url(/assets/images/hero.png);
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-nav{
+    max-width: 100vw;
+    margin: 0 2em;
+}
+
+.container-first-nav.d-flex.justify-content-between{
+    width: 100%;
 }
 
 .social-nav > li {
@@ -24,6 +35,10 @@ header {
 
 .btn-close.bg-success{
     background-color: #2cbc63;
+}
+
+.hamburger-container{
+    display: none;
 }
 
 a {
@@ -62,7 +77,9 @@ ul.navbar-nav > li:hover {
     padding: 100px 0;
 }
 
-
+.hero>h1 {
+    font-size: 60px;
+}
 
 /* ---------------------------- MAIN ---------------------------- */
 
@@ -201,6 +218,21 @@ footer .list-group-item {
 
 /*------------------------MEDIA QUERY MOBILE ------------------------*/
 @media only screen and (max-width:430px) {
+    .container-social,
+    div.btn.group.d-flex.justify-content-end>button,
+    nav.cta.d-flex>div.cta.d-flex>a,
+    .hamburger-second-nav,
+    .menu-second-nav{
+        display: none;
+    }
+
+    nav.cta.d-flex>div.hamburger-container{
+        display: flex;
+    }
+
+    .second-nav{
+        border: unset;
+    }
 
     .card-container {
         display: none;
@@ -239,6 +271,21 @@ footer .list-group-item {
 /*------------------------MEDIA QUERY TABLET ------------------------*/
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .nav>.social-nav.d-flex>li,
+    .hamburger-second-nav,
+    .menu-second-nav{
+        display: none;
+    }
+
+    .hamburger-container{
+        display: flex;
+    }
+
+    .btn.group.d-flex{
+        display: flex;
+        justify-content:flex-start;
+    }
 
     .card-container {
         padding: 1rem;
