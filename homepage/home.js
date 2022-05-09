@@ -136,7 +136,8 @@ let limit = 435;
 
 function countOne() {
     if (counter <= limit ){
-    numberOne.textContent = counter++}
+    numberOne.textContent = counter++
+    }
 }
 
 setInterval(countOne, 20)
@@ -144,17 +145,35 @@ setInterval(countOne, 20)
 let limitTwo = 100
 function countTwo() {
     if (counter <= limitTwo){
-    numberTwo.textContent = counter++}
+    numberTwo.textContent = counter++
+    }
 }
 
 setInterval(countTwo, 60)
 
-//chat icon
 
-const chatIcon = document.getElementById('chatIcon')
+//vibrating Icon
+const chatIcon = document.getElementById('chat-icon')
 
-function vibrateIcon() {
-   chatIcon.style.width = '100'
+function vibratingIcon() {
+    chatIcon.style.transform = chatIcon.style.transform == 'rotate(-10deg)' ? 'rotate(10deg)' : 'rotate(-10deg)'
 }
 
-setInterval(vibrateIcon, 100)
+
+setInterval(sizeIcon, 2000)
+function sizeIcon() {
+    let large = '1.2rem';
+    let small = '1rem';
+    chatIcon.style.width = chatIcon.style.width == large ? small : large
+    if (chatIcon.style.width == large) {
+        setInterval(vibratingIcon, 250)
+    } if (chatIcon.style.width == small) {
+        chatIcon.style.transform == 'rotate(0deg)'
+    }
+}
+
+
+
+
+
+

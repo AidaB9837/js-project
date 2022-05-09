@@ -52,6 +52,19 @@
   color: white !important;
 }
 
+#modalBtn {
+  height: 40px;
+  width: 180px;
+}
+
+#modalBtn span {
+  width: 70%;
+}
+
+#chat-icon {
+  width: 1rem;
+}
+
 .hamburger-menu {
   background-color: white;
   display: none;
@@ -106,6 +119,22 @@
 .carousel-card span {
   color: white;
   font-size: 20px;
+  z-index: 100;
+  position: absolute;
+  left: 80px;
+}
+
+.carousel-card #cardBtn {
+  border-radius: 10px;
+  width: 50px;
+  -webkit-transition: width 1s;
+  transition: width 1s;
+  text-align: start;
+}
+
+.carousel-card #cardBtn:hover {
+  position: absolute;
+  width: 280px;
 }
 
 .bridge-section {
@@ -245,9 +274,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-bottom: 2rem;
 }
 
@@ -391,7 +417,6 @@
 }
 
 .news .row-three-news img {
-  width: 90%;
   margin: auto;
   height: 100%;
   -o-object-fit: cover;
@@ -412,7 +437,9 @@
 }
 
 .news-row img {
-  width: 12rem;
+  width: 18%;
+  border: 2px solid black;
+  margin: 1%;
 }
 
 footer {
@@ -492,7 +519,16 @@ footer .input-button {
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .news-row img {
+    width: 23%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  .subtitle {
+    text-align: start !important;
+  }
   .hero-section {
     height: 40rem;
   }
@@ -511,6 +547,9 @@ footer .input-button {
 @media only screen and (max-width: 576px) {
   .hero-section {
     height: 30rem;
+  }
+  .news-row img {
+    width: 48%;
   }
 }
 /*# sourceMappingURL=style.css.map */
