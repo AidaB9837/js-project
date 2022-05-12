@@ -1,7 +1,16 @@
 
 /* --------------------------- HAMBURGER --------------------------- */
-
-
+let name;
+let phone;
+document.getElementById('callback').addEventListener('click',()=>{
+    return new Promise(resolve=>{
+        name=document.getElementById('name-offc').value
+        phone=document.getElementById('phone-offc').value;
+        let message=Success message:${name}-${phone}
+        resolve(message)
+    })
+    .then(message=>console.log(message))
+})
 /* ------------------------- Talk-an-expert ------------------------- */
 
 

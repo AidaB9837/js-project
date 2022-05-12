@@ -37,6 +37,10 @@ header {
     background-color: #2cbc63;
 }
 
+.modal-footer.border-0 {
+    justify-content: flex-start;
+}
+
 .hamburger-container{
     display: none;
 }
@@ -72,6 +76,8 @@ ul.navbar-nav > li:hover {
     border-radius: unset;
     width: 100%;
 }
+
+
 
 .hero{
     padding: 100px 0;
