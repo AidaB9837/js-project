@@ -302,6 +302,9 @@ div.btn-group-vertical.w-100{
     .email-input{
         margin-top:3rem
     }
+    .cookies{
+        display: none;
+    }
   
 }
 
@@ -344,5 +347,8 @@ div.btn-group-vertical.w-100{
 
     .email-input{
         margin-top:3rem
+    }
+    .cookies{
+        display: none;
     }
 }
