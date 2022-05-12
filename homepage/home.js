@@ -129,27 +129,22 @@ selectCookie.addEventListener('click', (e) => {
 //changing number
 
 const numberOne = document.getElementById('card-title-number')
-const numberTwo = document.getElementById('card-title-number2')
-
-let counter = 0;
-let limit = 435;
-
+let counter1 = 0;
 function countOne() {
-    if (counter <= limit ){
-    numberOne.textContent = counter++
+    if (counter1 <= 435 ){
+    numberOne.textContent = counter1++
     }
 }
+setInterval(countOne, 05)
 
-setInterval(countOne, 20)
-
-let limitTwo = 100
+const numberTwo = document.getElementById('card-title-number2')
+let counter2 = 0;
 function countTwo() {
-    if (counter <= limitTwo){
-    numberTwo.textContent = counter++
+    if (counter2 <= 100){
+    numberTwo.textContent = counter2++
     }
 }
-
-setInterval(countTwo, 60)
+setInterval(countTwo, 20)
 
 
 //vibrating Icon
@@ -172,6 +167,7 @@ function sizeIcon() {
     }
 }
 
+//small carousel
 
 
 

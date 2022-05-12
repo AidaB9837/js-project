@@ -379,6 +379,7 @@ $ugly-gray: rgb(92, 102, 125);
         margin: 1%;
     }
 }
+
 //footer
 footer {
     background-color: $weird-blue;
@@ -425,7 +426,8 @@ footer {
             color:white
         }
         p {
-            color: $ugly-gray
+            color: $ugly-gray;
+            font-size: 12px
         }
         .btn-cookie {
             width: 100%;
@@ -442,6 +444,7 @@ footer {
         }
     }
 }
+
 //medium screen
 @media only screen and (max-width: 1024px){
     .news-row {
