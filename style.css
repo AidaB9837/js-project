@@ -1,0 +1,381 @@
+/* ---------------------------- HEADER & HERO ---------------------------- */
+header {
+    max-width: 100vw;
+    background-image: url(/assets/images/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.first-nav{
+    max-width: 100vw;
+    margin: 0 2em;
+}
+
+.container-first-nav.d-flex.justify-content-between{
+    width: 100%;
+}
+
+.social-nav > li {
+    list-style-type: none;
+}
+
+.second-nav {
+    font-family:sans-serif;
+    border-top: 1px solid white;
+}
+
+.btn.btn-success {
+    background-color: #2cbc63;
+    border-radius: 2rem;
+}
+
+.btn.btn-success:hover{
+    background-color: rgb(80, 80, 80);
+}
+
+.btn-close.bg-success{
+    background-color: #2cbc63;
+}
+
+.modal-footer.border-0 {
+    justify-content: flex-start;
+}
+
+.hamburger-container{
+    display: none;
+}
+
+a {
+    color: white;
+}
+
+ul.navbar-nav > li:hover {
+    border-top: 2px solid white;
+}
+
+.img-offcan {
+    width: 100%;
+    height: 100%;
+}
+
+.green-info, a.nav-link.green-color {
+    color: #2cbc63;
+}
+
+.green-info:hover {
+    color: rgb(80, 80, 80);
+}
+
+#name-offc, #phone-offc {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-success.btn-form {
+    border-radius: unset;
+    width: 100%;
+}
+
+
+
+.hero{
+    padding: 100px 0;
+}
+
+.hero>h1 {
+    font-size: 60px;
+}
+
+/* ---------------------------- MAIN ---------------------------- */
+
+a.nav-link, a.nav-link.green-color:hover, a.nav-link:hover {
+    color: #5c667d
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #2cbc63;
+}
+
+.filter {
+    background-color: #023a51;
+    opacity: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card-container{
+    padding:0 20rem;
+}
+
+.card-summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mobile-cards {
+    display: none;
+}
+
+
+
+/* ---------------------------- FOOTER ---------------------------- */
+
+footer,
+footer .list-group-item {
+    background-color: #023a51;
+    border: none;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+
+}
+
+li {
+    font-weight: 500;
+}
+
+footer a,
+footer,
+footer li:first-child {
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+h2 a {
+    font-size: 3rem;
+}
+
+.btn-lg.btn-success.px-5.py-3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 0;
+    background-color: #2cbc63;
+}
+
+.bg-image {
+    background-image: url('/assets/images/map-ft.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer input,
+.button-svg {
+    background-color: transparent;
+    border: none;
+
+}
+
+footer input {
+    color: #97afb8;
+}
+
+.button-svg {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.email-input {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+hr {
+    border: 2px solid #97afb8;
+}
+
+.copyright hr {
+    margin: 0 15rem 2rem 15rem;
+    border: 1px;
+}
+
+.card-text,
+footer .list-group-item {
+    color: #97afb8
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.7rem;
+    color: #97afb8;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    ;
+}
+
+.col-5.mt-5 p {
+    margin: 0;
+    padding: 0;
+    color: #97afb8;
+}
+div.email-input{
+    margin-right: 5.2rem;
+}
+.email-hr{
+    width: 80%;
+}
+
+/* ----------------------------- COOKIES ----------------------------- */
+.cookies{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #e7f6f4;
+    font-size: 10px;
+    text-align: center;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+div.btn-group-vertical.w-100{
+    display: flex;
+    flex-direction: column;
+    gap:0.3rem;
+    align-items: center;
+}
+#all-cookies, #few-cookies{
+    border: 1px solid black;
+    width: 12rem;
+}
+.cookies p, .cookies button{
+    font-size: 0.5rem;
+}
+
+/*------------------------MEDIA QUERY MOBILE ------------------------*/
+@media only screen and (max-width:430px) {
+    .container-social,
+    div.btn.group.d-flex.justify-content-end>button,
+    nav.cta.d-flex>div.cta.d-flex>a,
+    .hamburger-second-nav,
+    .menu-second-nav{
+        display: none;
+    }
+    
+    h1.text-light{
+        font-size: 2.2rem;
+    }
+
+    p.text-light{
+        font-size: 1.1rem;
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    nav.cta.d-flex>div.hamburger-container{
+        display: flex;
+    }
+
+    .second-nav{
+        border: unset;
+    }
+
+    .card-container {
+        display: none;
+    }
+
+    .mobile-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+       
+    }
+    .m-card{
+        width: 90%;
+        font-size:0.7rem ;
+    } 
+    .bg-image.mt-5 h2 a{
+        font-size: 1.7rem;
+    }
+    .card-text{
+        font-size: 0.6rem;
+    }
+    .cointainer.b{
+        display: grid;
+        grid-column: 2;
+    }
+    .col-5 p{
+        display:none;
+    }
+    .email-input{
+        margin-top:3rem
+    }
+    .email-hr{
+        width: 150%;
+    }
+    div.email-input{
+        margin-right: 0;
+    }
+    .cookies{
+        display: none;
+    }
+  
+}
+
+/*------------------------MEDIA QUERY TABLET ------------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .nav>.social-nav.d-flex>li,
+    .hamburger-second-nav,
+    .menu-second-nav{
+        display: none;
+    }
+
+    .hamburger-container{
+        display: flex;
+    }
+
+    .btn.group.d-flex{
+        display: flex;
+        justify-content:flex-start;
+    }
+
+    .card-container {
+        padding: 1rem;
+    }
+    .col-5 p{
+        display:none;
+    }
+
+    div.card-img-overlay.filter.px-5.pt-4 p{
+        font-size: 0.7rem;
+       
+    }
+    .card-summary{
+        gap: 2rem;
+    }
+    div.d-flex.justify-content-between a{
+        font-size: 1.5rem;
+    }
+
+    .email-input{
+        margin-top:3rem
+    }
+    .email-hr{
+        width: 100%;
+    }
+    div.email-input{
+        margin-right: 0;
+    }
+    .cookies{
+        display: none;
+    }
+}
