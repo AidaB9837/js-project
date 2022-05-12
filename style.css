@@ -218,12 +218,18 @@ footer .list-group-item {
     padding: 0;
     color: #97afb8;
 }
+div.email-input{
+    margin-right: 5.2rem;
+}
+.email-hr{
+    width: 80%;
+}
 
 /* ----------------------------- COOKIES ----------------------------- */
 .cookies{
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: 78rem;
     background-color: #e7f6f4;
     font-size: 10px;
     text-align: center;
@@ -240,7 +246,10 @@ div.btn-group-vertical.w-100{
 }
 #all-cookies, #few-cookies{
     border: 1px solid black;
-    width: 16rem;
+    width: 12rem;
+}
+.cookies p, .cookies button{
+    font-size: 0.7rem;
 }
 
 /*------------------------MEDIA QUERY MOBILE ------------------------*/
@@ -302,6 +311,12 @@ div.btn-group-vertical.w-100{
     .email-input{
         margin-top:3rem
     }
+    .email-hr{
+        width: 150%;
+    }
+    div.email-input{
+        margin-right: 0;
+    }
     .cookies{
         display: none;
     }
@@ -347,6 +362,12 @@ div.btn-group-vertical.w-100{
 
     .email-input{
         margin-top:3rem
+    }
+    .email-hr{
+        width: 100%;
+    }
+    div.email-input{
+        margin-right: 0;
     }
     .cookies{
         display: none;
