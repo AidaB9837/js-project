@@ -316,7 +316,7 @@ div.offcanvas>* {
 
 
 .footer-row-one {
-    background-image: url(/assets/world.png);
+    background-image: url(assets/world.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50%;
@@ -375,6 +375,7 @@ footer .input-button {
     background-color: #262626;
     width: 35%;
     font-size: 10px;
+    z-index: 1000;
 }
 
 @media screen and (max-width: 320px) {
