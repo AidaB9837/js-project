@@ -229,7 +229,7 @@ div.email-input{
 .cookies{
     position: fixed;
     bottom: 0;
-    left: 78rem;
+    left: 0;
     background-color: #e7f6f4;
     font-size: 10px;
     text-align: center;
@@ -249,7 +249,7 @@ div.btn-group-vertical.w-100{
     width: 12rem;
 }
 .cookies p, .cookies button{
-    font-size: 0.7rem;
+    font-size: 0.5rem;
 }
 
 /*------------------------MEDIA QUERY MOBILE ------------------------*/
