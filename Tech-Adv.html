@@ -436,16 +436,16 @@
                         <strong>Phone:</strong> <a href="#">0712 610 33 181</a><br />
                         <strong>Mail:</strong> <a href="#">info@example.com</a>
                     </p>
-                    <div class="input-group mb-3" style="margin-top: 25%">
+                    <div class="input-group mb-3"  style="margin-top: 25%">
                         <p style="font-size: large">Request a callback</p>
-                        <form action="post" class="mt-0 w-100">
-                            <input type="text" required class="my-2 w-100 form-control"
+                        <form onsubmit="return false" class="mt-0 w-100">
+                            <input type="text" required class="my-2 w-100 form-control" id="name-cb"
                                 aria-describedby="inputGroup-sizing-default" placeholder="Your Name *" />
                             <input type="text" required class="my-2 w-100 form-control"
-                                aria-describedby="inputGroup-sizing-default" placeholder="Phone Number *" />
-                            <button class="btn w-100 my-2" type="submit">
+                                aria-describedby="inputGroup-sizing-default" id="phone-cb" placeholder="Phone Number *" />
+                            <a class="btn w-100 my-2" type="submit" id="callback">
                                 Request a Callback
-                            </button>
+                            </a>
                         </form>
                     </div>
                 </div>
@@ -459,7 +459,7 @@
                         <div class="modal-header" style="border: none">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form action="index.js">
+                        <form onsubmit="return false">
                             <section class="mx-5 py-3 border-bottom d-flex justify-content-between">
                                 <label for="job" class="me-5">I'm a/an </label>
                                 <select class="w-75" name="job" id="job" style="border: none">
@@ -501,28 +501,28 @@
                             </section>
                             <section class="mx-5 pt-5">
                                 <label class="my-1">Your Name *</label>
-                                <input type="text" class="w-100" required placeholder="Eg: John Doe" />
+                                <input type="text" class="w-100" required placeholder="Eg: John Doe" id="name"/>
                             </section>
                             <section class="mx-5 py-3 d-flex justify-content-between w-100">
                                 <label class="w-50">
                                     Your Email * <br />
-                                    <input type="email" required class="w-75 me-3" />
+                                    <input type="email" required class="w-75 me-3" id="email"/>
                                 </label>
                                 <label class="w-50">
                                     Phone Number * <br />
-                                    <input type="tel" required class="w-75" />
+                                    <input type="tel" required class="w-75" id="phone"/>
                                 </label>
                             </section>
                             <section class="mx-5 py-3">
                                 <label>Message</label>
-                                <input type="text" placeholder="Enter Message" class="w-100" style="height: 150px" />
+                                <input type="text" placeholder="Enter Message" id="message" class="w-100" style="height: 150px" />
                             </section>
                             <section class="mx-5 py-3">
                                 <input type="checkbox" checked required />
                                 <label> I agree to receive communications from FinLab.</label>
                             </section>
                             <section class="mx-5 py-3">
-                                <input type="submit" value="Send Message" class="py-2 px-5 fw-bold text-white"
+                                <input type="submit" value="Send Message" class="py-2 px-5 fw-bold text-white" id="offcanvas-form"
                                     style="background-color: var(--green); border: none" />
                             </section>
                         </form>
@@ -920,7 +920,7 @@
                 We Know The Importance Of Delivering The Best Customer Experience.
             </div>
             <div class=" d-flex mb-5 justify-content-center" style="background-color: #EFF5F7;">
-                <form action="index.js" class="w-auto">
+                <form class="w-auto" onSubmit="return false;">
                     <section class="mx-5 py-3 border-bottom d-flex justify-content-between">
                         <label for="job" class="me-5 fw-light">I'm a/an </label>
                         <select class="w-75 text-blue" name="job" id="job"
@@ -967,22 +967,22 @@
                         <label class="my-1 text-blue" style="font-size: 14px;">
                             Your Name *
                         </label>
-                        <input type="text" class="w-100 py-1 mt-1" required placeholder="Eg: John Doe"
+                        <input type="text" class="w-100 py-1 mt-1" required placeholder="Eg: John Doe" id="name"
                             style="border:none" />
                     </section>
                     <section class="mx-5 py-3 d-flex justify-content-between w-100">
                         <label class="w-50 text-blue" style="font-size: 14px;">
                             Your Email * <br />
-                            <input type="email" required class="w-75 mt-1 me-3 py-1" style="border:none" />
+                            <input type="email" required class="w-75 mt-1 me-3 py-1" id="email" style="border:none" />
                         </label>
                         <label class="w-50 text-blue" style="font-size: 14px;">
                             Phone Number * <br />
-                            <input type="tel" required class="w-75 py-1 mt-1" style="border:none" />
+                            <input type="tel" required class="w-75 py-1 mt-1" id="phone" style="border:none" />
                         </label>
                     </section>
                     <section class="mx-5 py-3">
                         <label class="text-blue" style="font-size: 14px;">Message</label>
-                        <input type="text" placeholder="Enter Message" class="w-100 mt-1"
+                        <input type="text" placeholder="Enter Message" class="w-100 mt-1" id="message"
                             style="height: 150px; border: none;" />
                     </section>
                     <section class="mx-5 py-3">
@@ -991,12 +991,23 @@
                             from FinLab.</label>
                     </section>
                     <section class="mx-5 py-3">
-                        <input type="submit" value="Send Message" class="py-2 px-5 fw-bold text-white"
+                        <input type="submit" value="Send Message" class="py-2 px-5 fw-bold text-white" id="inpage-form"
                             style="background-color: var(--green); border: none" />
                     </section>
                 </form>
                 <img src="https://fin.21lab.co/wp-content/uploads/2021/09/bg-ctf.jpg" class="w-50 d-none d-lg-inline">
             </div>
+        </section>
+        <section class="cookie-info h-75 p-2 m-0 text-white fw-light flex-column justify-content-between" style="display: flex;">
+            <p>
+                Un <span class="fw-bold">cookie</span> è una piccola quantità di dati inviati al tuo browser da un server web e che vengono successivamente memorizzati sul disco fisso del tuo computer. Il cookie viene poi riletto e riconosciuto dal sito web che lo ha inviato ogni qualvolta effettui una connessione successiva. Come parte dei servizi personalizzati per i suoi utenti, il nostro sito utilizza dei cookie per memorizzare e talvolta tenere traccia di alcuni dei dati personali forniti dagli utenti stessi.
+                <br>
+                Ti ricordiamo che il browser è quel software che ti permette di navigare velocemente nella Rete tramite la visualizzazione e il trasferimento delle informazioni sul disco fisso del tuo computer. Se le preferenze del tuo browser sono settate in modo da accettare i cookie, qualsiasi sito web può inviare i suoi cookie al tuo browser, ma <span class="fw-bold">al fine di proteggere la tua privacy </span> può rilevare solo ed esclusivamente quelli inviati dal sito stesso, e non quelli invece inviati al tuo browser da altri siti. Se vuoi saperne di più poi consultare la nostra privacy policy qui. Puoi accettare i cookies e proseguire, oppure puoi configurare i singoli cookies, utilizzando i tasti qui sotto.
+                <div class="btn-group-vertical w-100">
+                        <button type="button" id="all-cookies" class="btn btn-primary my-3 rounded" style="background-color: var(--green);border:none">Accetta</button>
+                        <button type="button" id="few-cookies" class="btn btn-primary my-3 text-black bg-white rounded" style="border: none;">Accetta solo i cookies necessari</button>
+                </div>
+            </p>
         </section>
         <footer>
             <div class="container pt-5">
