@@ -64,6 +64,17 @@ $ugly-gray: rgb(92, 102, 125);
 .nav-link {
     color: white!important
 }
+#modalBtn {
+    height: 40px;
+    width: 180px;
+    span {
+        width: 70%;
+    }
+}
+#chat-icon {
+    width: 1rem;
+}
+
 //hamburger menu
 .hamburger-menu {
     background-color: white;
@@ -111,6 +122,19 @@ $ugly-gray: rgb(92, 102, 125);
     span {
         color: white;
         font-size: 20px;
+        z-index: 100;
+        position: absolute;
+        left: 80px
+    }
+    #cardBtn {
+        border-radius: 10px;
+        width: 50px;
+        transition: width 1s;
+        text-align: start;
+    }
+    #cardBtn:hover {
+      position: absolute;
+      width: 280px;
     }
 }  
 // bridge
@@ -219,7 +243,6 @@ $ugly-gray: rgb(92, 102, 125);
 .services-row-four {
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 2rem;
     span {
         color: $ugly-gray;
@@ -336,7 +359,6 @@ $ugly-gray: rgb(92, 102, 125);
     }
     .row-three-news {
         img {
-            width:90%;
             margin: auto;
             height:100%;
             object-fit:cover;
@@ -346,14 +368,18 @@ $ugly-gray: rgb(92, 102, 125);
         }
     }  
 }
+
 .news-row {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
     img {
-        width:12rem
+        width:18%;
+        border: 2px solid black;
+        margin: 1%;
     }
 }
+
 //footer
 footer {
     background-color: $weird-blue;
@@ -400,7 +426,8 @@ footer {
             color:white
         }
         p {
-            color: $ugly-gray
+            color: $ugly-gray;
+            font-size: 12px
         }
         .btn-cookie {
             width: 100%;
@@ -417,8 +444,20 @@ footer {
         }
     }
 }
+
 //medium screen
+@media only screen and (max-width: 1024px){
+    .news-row {
+        img {
+            width:23%;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px){
+    .subtitle {
+       text-align: start!important;
+    }
     .hero-section {
         height: 40rem;
     }
@@ -437,5 +476,10 @@ footer {
 @media only screen and (max-width: 576px){
     .hero-section {
         height: 30rem;
+    }
+    .news-row {
+        img {
+            width:48%;
+        }
     }
 }

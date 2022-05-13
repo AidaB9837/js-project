@@ -1,5 +1,5 @@
 //console log data from the form inside modal
-const modalBtn = document.getElementById('modalBtn')
+const modalBtn = document.getElementById('modalFormButton')
 const form = document.getElementById('modal-form')
 
 modalBtn.addEventListener('click', function(e) {
@@ -129,32 +129,47 @@ selectCookie.addEventListener('click', (e) => {
 //changing number
 
 const numberOne = document.getElementById('card-title-number')
-const numberTwo = document.getElementById('card-title-number2')
-
-let counter = 0;
-let limit = 435;
-
+let counter1 = 0;
 function countOne() {
-    if (counter <= limit ){
-    numberOne.textContent = counter++}
+    if (counter1 <= 435 ){
+    numberOne.textContent = counter1++
+    }
 }
+setInterval(countOne, 05)
 
-setInterval(countOne, 20)
-
-let limitTwo = 100
+const numberTwo = document.getElementById('card-title-number2')
+let counter2 = 0;
 function countTwo() {
-    if (counter <= limitTwo){
-    numberTwo.textContent = counter++}
+    if (counter2 <= 100){
+    numberTwo.textContent = counter2++
+    }
+}
+setInterval(countTwo, 20)
+
+
+//vibrating Icon
+const chatIcon = document.getElementById('chat-icon')
+
+function vibratingIcon() {
+    chatIcon.style.transform = chatIcon.style.transform == 'rotate(-10deg)' ? 'rotate(10deg)' : 'rotate(-10deg)'
 }
 
-setInterval(countTwo, 60)
 
-//chat icon
-
-const chatIcon = document.getElementById('chatIcon')
-
-function vibrateIcon() {
-   chatIcon.style.width = '100'
+setInterval(sizeIcon, 2000)
+function sizeIcon() {
+    let large = '1.2rem';
+    let small = '1rem';
+    chatIcon.style.width = chatIcon.style.width == large ? small : large
+    if (chatIcon.style.width == large) {
+        setInterval(vibratingIcon, 250)
+    } if (chatIcon.style.width == small) {
+        chatIcon.style.transform == 'rotate(0deg)'
+    }
 }
 
-setInterval(vibrateIcon, 100)
+
+
+
+
+
+
