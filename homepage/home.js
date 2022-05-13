@@ -1,5 +1,5 @@
 //console log data from the form inside modal
-const modalBtn = document.getElementById('modalBtn')
+const modalBtn = document.getElementById('modalFormButton')
 const form = document.getElementById('modal-form')
 
 modalBtn.addEventListener('click', function(e) {
@@ -167,7 +167,7 @@ function sizeIcon() {
     }
 }
 
-//small carousel
+
 
 
 
