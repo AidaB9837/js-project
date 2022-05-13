@@ -50,9 +50,9 @@ document.getElementById("inpage-submit").addEventListener("click",()=>{
         inPageForm.job= document.getElementById('job').value
         inPageForm.info= document.getElementById('info').value
         inPageForm.interest= document.getElementById('interest').value
-        inPageForm.fullname= document.getElementById('name').value
-        inPageForm.email= document.getElementById('email').value
-        inPageForm.phone= document.getElementById('phone').value
+        inPageForm.fullname= document.getElementById('name1').value
+        inPageForm.email= document.getElementById('email1').value
+        inPageForm.phone= document.getElementById('phone1').value
         inPageForm.message= document.getElementById('message').value
         if(inPageForm.fullname&&inPageForm.email&&inPageForm.phone)resolve(inPageForm)
         else reject("All Inputs must be filled")
